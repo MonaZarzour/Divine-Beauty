@@ -1,0 +1,2 @@
+[data-reveal]{opacity:0;transform:translateY(1.2rem);transition:opacity .7s ease,transform .7s ease}[data-reveal].is-revealed{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){[data-reveal]{opacity:1;transform:none}}

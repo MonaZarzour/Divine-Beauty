@@ -1,0 +1,31 @@
+export const clinicConfig = {
+  name: "Divine Beauty",
+  tagline: "Hud · helse · velvære",
+  phoneDisplay: "90857071",
+  phoneHref: "tel:+4790857071",
+  email: "[E-postadresse]",
+  emailHref: "mailto:kontakt@eksempel.no",
+  address: "Grønnegata 4A",
+  postalCode: "0350",
+  city: "Oslo",
+  openingHours: "[Åpningstider]",
+  bookingUrl: "https://bestill.timma.no/divinebeauty",
+  instagram: "https://www.instagram.com/divinebeauty_by_talin/",
+  facebook: "",
+  mapUrl: "https://maps.app.goo.gl/ajUvmiicHzwfEzun6",
+};
+
+export const routeTitles = {
+  hjem: "Hjem",
+  hovedinnhold: "Hjem",
+  tillit: "Våre kvalitetsprinsipper",
+  behandlinger: "Behandlinger",
+  behandlingsprosess: "Slik går det for seg",
+  "om-klinikken": "Om klinikken",
+  verdier: "Hvorfor velge oss",
+  behandlere: "Behandlere",
+  resultater: "Resultater",
+  kundeomtaler: "Kundeopplevelser",
+  "ofte-stilte-sporsmal": "Ofte stilte spørsmål",
+  kontakt: "Kontakt",
+};

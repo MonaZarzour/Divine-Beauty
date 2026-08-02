@@ -1,0 +1,11 @@
+{
+  "notice": "Medisinsk innhold og priser skal kvalitetssikres før publisering.",
+  "items": [
+    {"id":"konsultasjon","name":"Hudkonsultasjon","category":"ansikt","duration":"30–45 min"},
+    {"id":"signatur","name":"Signatur ansiktsbehandling","category":"ansikt fuktighet","duration":"60 min"},
+    {"id":"peeling","name":"Kjemisk peeling","category":"hudtekstur pigmentering","duration":"30–45 min"},
+    {"id":"fukt","name":"Fukt og ro","category":"fuktighet sensitiv","duration":"50 min"},
+    {"id":"microneedling","name":"Microneedling","category":"hudtekstur","duration":"60 min"},
+    {"id":"sensitiv","name":"Sensitiv hud","category":"sensitiv","duration":"45 min"}
+  ]
+}

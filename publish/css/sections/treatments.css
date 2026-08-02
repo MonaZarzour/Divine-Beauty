@@ -1,0 +1,18 @@
+.treatments-section{background:var(--gradient-pink-soft)}
+.treatment-catalog{display:grid;grid-template-columns:1fr;gap:1rem}
+.treatment-category-card{display:grid;grid-template-rows:12rem 1fr;width:100%;padding:0;overflow:hidden;text-align:left;background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);cursor:pointer;transition:transform var(--transition-base),box-shadow var(--transition-base),border-color var(--transition-base)}
+.treatment-category-card:hover{transform:translateY(-4px);border-color:rgba(183,127,135,.55);box-shadow:var(--shadow-md)}
+.treatment-category-card:focus-visible{outline:3px solid var(--color-secondary);outline-offset:3px}
+.treatment-category-card__media{display:grid;place-items:center;overflow:hidden;background:linear-gradient(135deg,var(--color-primary-light),var(--color-secondary-light))}
+.treatment-category-card__media img{width:100%;height:100%;object-fit:cover;filter:saturate(.76);transition:transform var(--transition-base)}
+.treatment-category-card:hover img{transform:scale(1.025)}
+.treatment-category-card__monogram{font:italic 4rem var(--font-heading);color:var(--color-primary);opacity:.72}
+.treatment-category-card__content{display:flex;flex-direction:column;align-items:flex-start;padding:1.25rem}
+.treatment-category-card__content .eyebrow{margin-bottom:.55rem}
+.treatment-category-card__content>strong{font:500 clamp(1.6rem,4vw,2rem)/1.1 var(--font-heading);color:var(--color-heading)}
+.treatment-category-card__content>span:not(.eyebrow,.treatment-category-card__link){margin-top:.65rem;font-size:.82rem;line-height:1.55;color:var(--color-text-muted)}
+.treatment-category-card__link{display:flex;align-items:center;gap:.45rem;margin-top:auto;padding-top:1.15rem;font-size:.76rem;font-weight:750;color:var(--color-primary-dark)}
+.treatment-category-card__link span{transition:transform var(--transition-fast)}
+.treatment-category-card:hover .treatment-category-card__link span{transform:translateX(.25rem)}
+@media(min-width:560px){.treatment-catalog{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1024px){.treatment-catalog{grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem}.treatment-category-card{grid-template-rows:13rem 1fr}.treatment-category-card:first-child,.treatment-category-card:nth-child(5){grid-column:span 2;grid-template-columns:1.1fr .9fr;grid-template-rows:1fr}.treatment-category-card:first-child .treatment-category-card__media,.treatment-category-card:nth-child(5) .treatment-category-card__media{min-height:20rem}}

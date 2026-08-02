@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120">
+<defs>
+  <linearGradient id="pinkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#F8EEEE"/>
+    <stop offset="35%" stop-color="#EACFD1"/>
+    <stop offset="70%" stop-color="#D9B4B7"/>
+    <stop offset="100%" stop-color="#C8959B"/>
+  </linearGradient>
+  <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#8D682E"/>
+    <stop offset="25%" stop-color="#C6A15B"/>
+    <stop offset="48%" stop-color="#F4DFA1"/>
+    <stop offset="58%" stop-color="#FFF1C2"/>
+    <stop offset="75%" stop-color="#D1AA5D"/>
+    <stop offset="100%" stop-color="#9C7132"/>
+  </linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#342A31" flood-opacity="0.10"/>
+  </filter>
+</defs>
+<rect width="1600" height="1120" fill="#FAF7F5"/>
+<rect x="0" y="0" width="1600" height="24" fill="url(#goldGradient)"/>
+<text x="80" y="104" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" fill="#342A31">Pink &amp; Gold Skincare Palette</text>
+<text x="80" y="154" font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#7C6570">Soft, feminine and premium — designed for a calm skincare clinic website.</text>
+<g filter="url(#shadow)">
+  <rect x="80.0" y="210.0" width="342.0" height="210" rx="20" fill="#FFFFFF"/>
+  <rect x="94.0" y="224.0" width="314.0" height="100" rx="14" fill="#FAF7F5"/>
+</g>
+<text x="102.0" y="355.0" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#342A31">Porcelain White</text>
+<text x="102.0" y="390.0" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#B77F87">#FAF7F5</text>
+<text x="218.0" y="390.0" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#75656D">Main background</text>
+<g filter="url(#shadow)">
+  <rect x="446.0" y="210.0" width="342.0" height="210" rx="20" fill="#FFFFFF"/>
+  <rect x="460.0" y="224.0" width="314.0" height="100" rx="14" fill="#F4E8E8"/>
+</g>
+<text x="468.0" y="355.0" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#342A31">Blush Mist</text>
+<text x="468.0" y="390.0" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#B77F87">#F4E8E8</text>
+<text x="584.0" y="390.0" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#75656D">Secondary background</text>
+<g filter="url(#shadow)">
+  <rect x="812.0" y="210.0" width="342.0" height="210" rx="20" fill="#FFFFFF"/>
+  <rect x="826.0" y="224.0" width="314.0" height="100" rx="14" fill="#D9B4B7"/>
+</g>
+<text x="834.0" y="355.0" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#342A31">Soft Rose</text>
+<text x="834.0" y="390.0" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#B77F87">#D9B4B7</text>
+<text x="950.0" y="390.0" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#75656D">Primary brand pink</text>
+<g filter="url(#shadow)">
+  <rect x="1178.0" y="210.0" width="342.0" height="210" rx="20" fill="#FFFFFF"/>
+  <rect x="1192.0" y="224.0" width="314.0" height="100" rx="14" fill="#B77F87"/>
+</g>
+<text x="1200.0" y="355.0" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#342A31">Muted Mauve Rose</text>
+<text x="1200.0" y="390.0" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#B77F87">#B77F87</text>
+<text x="1316.0" y="390.0" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#75656D">Buttons and hover states</text>
+<g filter="url(#shadow)">
+  <rect x="80.0" y="454.0" width="342.0" height="210" rx="20" fill="#FFFFFF"/>
+  <rect x="94.0" y="468.0" width="314.0" height="100" rx="14" fill="#C6A15B"/>
+</g>
+<text x="102.0" y="599.0" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#342A31">Champagne Gold</text>
+<text x="102.0" y="634.0" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#B77F87">#C6A15B</text>
+<text x="218.0" y="634.0" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#75656D">Logo and premium accents</text>
+<g filter="url(#shadow)">
+  <rect x="446.0" y="454.0" width="342.0" height="210" rx="20" fill="#FFFFFF"/>
+  <rect x="460.0" y="468.0" width="314.0" height="100" rx="14" fill="#342A31"/>
+</g>
+<text x="468.0" y="599.0" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#342A31">Plum Charcoal</text>
+<text x="468.0" y="634.0" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#B77F87">#342A31</text>
+<text x="584.0" y="634.0" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#75656D">Readable text</text>
+<g filter="url(#shadow)">
+  <rect x="812.0" y="454.0" width="342.0" height="210" rx="20" fill="#FFFFFF"/>
+  <rect x="826.0" y="468.0" width="314.0" height="100" rx="14" fill="#E5D5D5"/>
+</g>
+<text x="834.0" y="599.0" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#342A31">Rose Pearl</text>
+<text x="834.0" y="634.0" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#B77F87">#E5D5D5</text>
+<text x="950.0" y="634.0" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#75656D">Borders and dividers</text>
+<text x="80" y="700" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#342A31">Signature gradients</text>
+<text x="80" y="744" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#7C6570">Use pink for large surfaces and gold sparingly for premium details.</text>
+<rect x="80" y="780" width="680" height="118" rx="24" fill="url(#pinkGradient)" filter="url(#shadow)"/>
+<text x="80" y="935" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#342A31">Soft Rose Gradient</text>
+<text x="80" y="970" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#75656D">#F8EEEE → #EACFD1 → #D9B4B7 → #C8959B</text>
+<rect x="840" y="780" width="680" height="118" rx="24" fill="url(#goldGradient)" filter="url(#shadow)"/>
+<text x="840" y="935" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#342A31">Metallic Champagne Gradient</text>
+<text x="840" y="970" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#75656D">#8D682E → #C6A15B → #F4DFA1 → #FFF1C2 → #D1AA5D → #9C7132</text>
+<line x1="80" y1="1000" x2="1520" y2="1000" stroke="#E5D5D5" stroke-width="2"/>
+<text x="80" y="1040" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#342A31">Suggested balance:</text>
+<text x="275" y="1040" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#75656D">45% Porcelain · 25% Blush · 15% Soft Rose · 8% Mauve Rose · 4% Text · 3% Gold</text>
+</svg>

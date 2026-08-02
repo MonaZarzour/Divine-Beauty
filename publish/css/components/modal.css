@@ -1,0 +1,12 @@
+.modal{width:min(92vw,880px);max-height:88vh;padding:0;border:0;border-radius:var(--radius-lg);background:transparent;color:var(--color-text);box-shadow:var(--shadow-lg)}.modal::backdrop{background:var(--color-overlay);backdrop-filter:blur(4px)}.modal__surface{position:relative;background:var(--color-surface);padding:clamp(1.5rem,5vw,3rem);overflow:auto;max-height:88vh}.modal__close{position:sticky;top:0;z-index:2;float:right;width:2.75rem;height:2.75rem;border-radius:50%;background:var(--color-surface-soft);color:var(--color-heading);font-size:1.7rem;line-height:1;cursor:pointer}.modal h2{font-size:clamp(2rem,6vw,3.2rem);margin:.7rem 0 1rem}.modal h3{font-family:var(--font-body);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin:1.7rem 0 .5rem}.modal p,.modal li{color:var(--color-text-muted)}.modal ul{list-style:disc;padding-left:1.25rem}.modal__meta{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0}.modal__meta span{background:var(--color-primary-light);padding:.35rem .7rem;border-radius:2rem;font-size:.78rem}.modal__warning{margin-top:1.5rem;padding:1rem;border-left:3px solid var(--color-secondary);background:var(--color-secondary-light)}
+.modal-treatment-list{clear:both;display:grid;margin:1.5rem 0 2rem;border-top:1px solid var(--color-border)}
+.modal-treatment-row{display:grid;gap:.75rem;padding:1.15rem 0;border-bottom:1px solid var(--color-border)}
+.modal-treatment-row__heading{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem}
+.modal-treatment-row .modal-treatment-row__heading h3{margin:0;letter-spacing:0;text-transform:none;font-size:1rem;line-height:1.35}
+.modal-treatment-row__heading span{padding:.2rem .5rem;border-radius:var(--radius-pill);background:var(--color-secondary-light);font-size:.62rem;font-weight:750;color:var(--color-primary-deep)}
+.modal-treatment-row p{margin-top:.35rem;font-size:.8rem;line-height:1.55}
+.modal-treatment-row small{display:block;margin-top:.45rem;color:var(--color-primary-dark)}
+.modal-treatment-row__meta{display:flex;align-items:center;justify-content:space-between;gap:.75rem;white-space:nowrap}
+.modal-treatment-row__meta span{font-size:.72rem;color:var(--color-text-muted)}
+.modal-treatment-row__meta strong{color:var(--color-primary-deep)}
+@media(min-width:640px){.modal-treatment-row{grid-template-columns:minmax(0,1fr) auto;align-items:start}.modal-treatment-row__meta{min-width:8rem;flex-direction:column;align-items:flex-end}}

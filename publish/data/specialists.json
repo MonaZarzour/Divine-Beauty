@@ -1,0 +1,7 @@
+{
+  "notice": "Alle navn og kvalifikasjoner er plassholdere.",
+  "items": [
+    {"id":"behandler-1","name":"[Fullt navn]","role":"[Rolle / tittel]"},
+    {"id":"behandler-2","name":"[Fullt navn]","role":"[Rolle / tittel]"}
+  ]
+}
