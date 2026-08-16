@@ -6,7 +6,7 @@ export const initBeforeAfterSliders = () => {
     if (!range || !before || !handle) return;
     const update = () => {
       const value = `${range.value}%`;
-      before.style.width = value;
+      before.style.clipPath = `inset(0 ${100 - Number(range.value)}% 0 0)`;
       handle.style.left = value;
       range.setAttribute("aria-valuenow", range.value);
     };

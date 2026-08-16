@@ -1,7 +1,6 @@
 {
-  "notice": "Alle navn og kvalifikasjoner er plassholdere.",
+  "notice": "Profilopplysninger kan oppdateres når flere verifiserte detaljer er tilgjengelige.",
   "items": [
-    {"id":"behandler-1","name":"[Fullt navn]","role":"[Rolle / tittel]"},
-    {"id":"behandler-2","name":"[Fullt navn]","role":"[Rolle / tittel]"}
+    {"id":"talin","name":"Talin","role":"Hovedbehandler"}
   ]
 }

@@ -19,7 +19,7 @@ const categoryMarkup = (category) => {
   const rows = items.map((item) => `<article class="modal-treatment-row"><div><div class="modal-treatment-row__heading"><h3>${item.name}</h3>${item.badge ? `<span>${item.badge}</span>` : ""}</div><p>${item.description}</p>${item.note ? `<small>${item.note}</small>` : ""}</div><div class="modal-treatment-row__meta">${item.duration ? `<span>${item.duration}</span>` : ""}<strong>${formatPrice(item)}</strong></div></article>`).join("");
   return `<p class="eyebrow">Behandlingskategori</p><h2 id="detail-title">${category.name}</h2><p>${category.intro}</p><div class="modal-treatment-list">${rows}</div><a class="button button--primary" href="${clinicConfig.bookingUrl}" target="_blank" rel="noopener" data-dialog-action>Bestill time</a>`;
 };
-const specialistMarkup = (item) => `<p class="eyebrow">${item.role}</p><h2 id="detail-title">${item.name}</h2><p>«${item.philosophy}»</p><h3>Utdanning</h3><p>${item.education}</p><h3>Sertifiseringer</h3><p>${item.certifications}</p><h3>Kompetanseområder</h3><p>${item.expertise}</p><h3>Språk</h3><p>${item.languages}</p><div class="modal__warning"><strong>Plassholderinformasjon</strong><p>Navn, rolle og kvalifikasjoner må erstattes og dokumenteres før nettstedet publiseres.</p></div><a class="button button--primary" href="#kontakt" data-dialog-action>Kontakt klinikken</a>`;
+const specialistMarkup = (item) => `<p class="eyebrow">${item.role}</p><h2 id="detail-title">${item.name}</h2><p>«${item.philosophy}»</p><h3>Fokusområder</h3><p>${item.expertise}</p><a class="button button--primary" href="#kontakt" data-dialog-action>Kontakt klinikken</a>`;
 
 const openDialog = (dialog, content, markup, trigger) => {
   content.innerHTML = markup;
