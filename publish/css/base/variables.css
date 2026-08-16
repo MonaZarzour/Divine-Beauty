@@ -16,3 +16,4 @@
   --container-sm:720px;--container-md:960px;--container-lg:1200px;--container-xl:1400px;--container-padding:clamp(1rem,4vw,2.5rem);
   --header-offset:8.2rem;--transition-fast:180ms ease;--transition-base:350ms cubic-bezier(.2,.8,.2,1);--z-header:50;--z-overlay:100;--z-floating:40
 }
+:root{--header-offset:5.4rem}

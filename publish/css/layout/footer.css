@@ -1,1 +1,24 @@
-.site-footer{background:linear-gradient(135deg,#f8eeee 0%,#ead6e8 48%,#eee5f4 100%);color:var(--color-text);padding:4.5rem 0 1.5rem;border-top:1px solid var(--color-border)}.site-footer__grid{display:grid;gap:2.5rem}.site-footer h2{color:var(--color-primary-dark);font-family:var(--font-body);font-size:.78rem;font-weight:750;letter-spacing:.14em;text-transform:uppercase;margin-bottom:1.1rem}.site-footer__grid>div:first-child p{color:var(--color-text-muted);margin-top:1.4rem}.site-footer nav,.site-footer address{display:flex;flex-direction:column;align-items:flex-start;gap:.55rem}.site-footer a{color:var(--color-heading);text-decoration:none}.site-footer a:hover{color:var(--color-primary-dark)}.brand--footer{display:inline-flex;padding:.4rem .55rem;border-radius:var(--radius-md);background:rgba(255,255,255,.55)}.brand--footer .brand__logo{width:min(11rem,100%)}.site-footer__legal{margin-top:4rem;padding-top:1.5rem;border-top:1px solid rgba(124,101,112,.28);display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;font-size:.78rem;color:var(--color-text-muted)}.site-footer__legal nav{display:flex;flex-direction:row;flex-wrap:wrap}.site-footer__legal button{padding:0;background:transparent;color:var(--color-heading);cursor:pointer}.site-footer__legal button:hover{color:var(--color-primary-dark)}.site-footer__disclaimer{margin-top:1rem;color:var(--color-text-muted);font-size:.76rem}
+.site-footer{background:linear-gradient(135deg,#faeeee 0%,#f3d9df 48%,#e9c4cf 100%);color:var(--color-text);padding:0 0 1.5rem;border-top:1px solid rgba(183,127,135,.24)}
+.site-footer__contact{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding-top:clamp(2.5rem,5vw,4rem);padding-bottom:clamp(2.5rem,5vw,4rem);border-bottom:1px solid rgba(124,101,112,.22)}
+.site-footer__contact h2,.site-footer h2{color:var(--color-primary-dark);font-family:var(--font-body);font-size:.78rem;font-weight:750;letter-spacing:.14em;text-transform:uppercase;margin:0}
+.site-footer__actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:.7rem}
+.site-footer__actions .button{min-height:2.8rem;padding:.65rem 1.1rem}
+.site-footer__social{display:grid;place-items:center;width:2.8rem;height:2.8rem;flex:0 0 2.8rem;color:var(--color-primary-deep);background:rgba(255,255,255,.82);border:1px solid rgba(124,101,112,.18);border-radius:50%;transition:transform var(--transition-fast),background var(--transition-fast),color var(--transition-fast)}
+.site-footer__social:hover{transform:translateY(-2px);background:#fff;color:var(--color-primary-dark)}
+.site-footer__social:focus-visible{outline:3px solid var(--color-secondary);outline-offset:3px}
+.site-footer__social svg{width:1.25rem;height:1.25rem;fill:none;stroke:currentColor;stroke-width:1.7}
+.site-footer__social .site-footer__social-dot{fill:currentColor;stroke:none}
+.site-footer__grid{display:grid;gap:2.5rem;padding-top:4rem}
+.site-footer__grid h2{margin-bottom:1.1rem}
+.site-footer__grid>div:first-child p{color:var(--color-text-muted);margin-top:1.4rem}
+.site-footer nav,.site-footer address{display:flex;flex-direction:column;align-items:flex-start;gap:.55rem}
+.site-footer a{color:var(--color-heading);text-decoration:none}
+.site-footer a:hover{color:var(--color-primary-dark)}
+.brand--footer{display:inline-flex;padding:.4rem .55rem;border-radius:var(--radius-md);background:rgba(255,255,255,.55)}
+.brand--footer .brand__logo{width:min(11rem,100%)}
+.site-footer__legal{margin-top:4rem;padding-top:1.5rem;border-top:1px solid rgba(124,101,112,.28);display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;font-size:.78rem;color:var(--color-text-muted)}
+.site-footer__legal nav{display:flex;flex-direction:row;flex-wrap:wrap}
+.site-footer__legal button{padding:0;background:transparent;color:var(--color-heading);cursor:pointer}
+.site-footer__legal button:hover{color:var(--color-primary-dark)}
+@media(max-width:767px){.site-footer__contact{align-items:flex-start;flex-direction:column}.site-footer__actions{justify-content:flex-start;width:100%}.site-footer__actions .button{flex:1 1 calc(50% - .7rem)}.site-footer__social{flex:0 0 2.8rem}}
+@media(max-width:430px){.site-footer__actions .button{flex-basis:100%}}

@@ -1,0 +1,18 @@
+.videos-section{overflow:hidden;background:linear-gradient(145deg,#fff7f7 0%,#f7e1e7 52%,#f2d5df 100%)}
+.videos-section__intro{display:flex;flex-direction:column;align-items:flex-start;gap:1rem;color:var(--color-text-muted)}
+.videos-section__intro .text-link{font-size:.8rem;font-weight:750;color:var(--color-primary-dark)}
+.video-carousel{overflow:hidden}
+.video-carousel:focus-visible{outline:3px solid var(--color-secondary);outline-offset:3px}
+.video-carousel__viewport{position:relative;height:clamp(32rem,67vw,45rem);overflow:hidden;background:transparent}
+.video-carousel__track{position:absolute;inset:0}
+.video-card{position:absolute;inset:0;display:grid;place-items:center;opacity:0;visibility:hidden;transform:translateX(2.5rem) scale(.985);transition:opacity .65s ease,transform .65s ease,visibility .65s}
+.video-card.is-active{z-index:1;opacity:1;visibility:visible;transform:none}
+.video-card video{display:block;width:auto;max-width:100%;height:100%;aspect-ratio:9/16;object-fit:contain;background:rgba(255,255,255,.18);border-radius:var(--radius-md);box-shadow:0 .8rem 2rem rgba(92,48,68,.12)}
+.video-carousel__button{position:absolute;z-index:3;top:50%;display:grid;place-items:center;width:3rem;height:3rem;border:1px solid rgba(255,255,255,.82);border-radius:50%;background:rgba(255,255,255,.88);color:var(--color-primary-deep);box-shadow:var(--shadow-md);cursor:pointer;transform:translateY(-50%);transition:background var(--transition-fast),transform var(--transition-fast)}
+.video-carousel__button:hover,.video-carousel__button:focus-visible{background:#fff;transform:translateY(-50%) scale(1.05)}
+.video-carousel__button--prev{left:clamp(.75rem,4vw,3rem)}
+.video-carousel__button--next{right:clamp(.75rem,4vw,3rem)}
+.video-carousel__footer{display:flex;justify-content:flex-end;padding-top:.75rem;color:var(--color-text-muted);font-size:.7rem}
+.video-carousel__footer [data-video-status]{font-weight:800;color:var(--color-primary-dark)}
+@media(max-width:559px){.video-carousel__viewport{height:min(142vw,36rem)}.video-carousel__button{width:2.65rem;height:2.65rem}}
+@media(prefers-reduced-motion:reduce){.video-card{transition:none}}

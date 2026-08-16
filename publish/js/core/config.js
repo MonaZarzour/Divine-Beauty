@@ -17,11 +17,8 @@ export const routeTitles = {
   hovedinnhold: "Hjem",
   tillit: "Våre kvalitetsprinsipper",
   behandlinger: "Behandlinger",
-  behandlingsprosess: "Slik går det for seg",
-  "om-klinikken": "Om klinikken",
-  verdier: "Hvorfor velge oss",
   behandlere: "Behandlere",
   resultater: "Resultater",
-  "ofte-stilte-sporsmal": "Ofte stilte spørsmål",
+  videoer: "Videoer",
   kontakt: "Kontakt",
 };

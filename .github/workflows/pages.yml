@@ -25,6 +25,8 @@ jobs:
         uses: actions/checkout@v6
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+      - name: Update media manifest
+        run: node publish/scripts/generate-media-manifest.mjs
       - name: Upload published site
         uses: actions/upload-pages-artifact@v4
         with:

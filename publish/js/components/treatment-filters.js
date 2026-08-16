@@ -12,8 +12,7 @@ const categoryCard = (category) => {
       <span class="treatment-category-card__content">
         <span class="eyebrow">${countLabel}</span>
         <strong>${category.name}</strong>
-        <span>${category.intro}</span>
-        <span class="treatment-category-card__link">Se behandlinger <span aria-hidden="true">→</span></span>
+        <span class="treatment-category-card__link">Se alle <span aria-hidden="true">→</span></span>
       </span>
     </button>`;
 };

@@ -1,23 +1,23 @@
 import { initRouter } from "./core/router.js";
 import { initNavigation } from "./components/navigation.js";
 import { initMobileMenu } from "./components/mobile-menu.js";
-import { initAccordions } from "./components/accordion.js";
 import { initTabs } from "./components/tabs.js";
 import { initModals } from "./components/modal.js";
 import { initTreatmentFilters } from "./components/treatment-filters.js";
 import { initScrollAnimations } from "./components/scroll-animations.js";
 import { initActiveSection } from "./components/active-section.js";
 import { initBeforeAfterSliders } from "./components/before-after-slider.js?v=3";
-import { initResultsCarousels } from "./components/results-carousel.js?v=3";
+import { initResultsCarousels } from "./components/results-carousel.js?v=5";
+import { initVideoCarousels } from "./components/video-carousel.js?v=3";
 import { initContactLinks } from "./components/contact-links.js";
 import { initPrivacyNotice } from "./components/privacy-notice.js";
 import { initBackToTop } from "./components/back-to-top.js";
+import { initBackgroundAudio } from "./components/background-audio.js?v=3";
 
 document.addEventListener("DOMContentLoaded", () => {
   initRouter();
   initNavigation();
   initMobileMenu();
-  initAccordions();
   initTabs();
   initModals();
   initTreatmentFilters();
@@ -25,7 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
   initActiveSection();
   initBeforeAfterSliders();
   initResultsCarousels();
+  initVideoCarousels();
   initContactLinks();
   initPrivacyNotice();
   initBackToTop();
+  initBackgroundAudio();
 });

@@ -5,10 +5,10 @@
 export const treatmentCategories = [
   { id: "ansikt", name: "Ansikt", intro: "Klassiske og avanserte behandlinger tilpasset hudens behov.", image: "assets/images/behandlinger/ansiktsbehandling.jpg", alt: "Ansiktsbehandling i rolige omgivelser" },
   { id: "signature", name: "Signature", intro: "Eksklusive signaturbehandlinger med Dr. Dennis Gross.", image: "assets/images/behandlinger/microneedling.jpg", alt: "Profesjonell hudbehandling" },
-  { id: "konsultasjon", name: "Konsultasjon", intro: "Et trygt første steg før valg av behandling.", image: "assets/images/behandlinger/konsultasjon.jpg", alt: "Hudpleieprodukter klargjort for konsultasjon" },
-  { id: "vipper-bryn", name: "Vipper og bryn", intro: "Farge, forming, laminering og vippeløft.", image: "assets/images/behandlinger/sensitiv.jpg", alt: "Produkter til skjønnhetsbehandling" },
-  { id: "harfjerning", name: "Hårfjerning", intro: "Voksbehandlinger for kvinner, enkeltområder og pakker.", image: "assets/images/behandlinger/fuktighet.jpg", alt: "Produkter brukt ved skånsom behandling" },
-  { id: "kropp", name: "Kropp", intro: "Peelinger og dyprensende behandlinger for kroppen.", image: "assets/images/behandlinger/peeling.jpg", alt: "Produkter klargjort for peeling" },
+  { id: "konsultasjon", name: "Konsultasjon", intro: "Et trygt første steg før valg av behandling.", image: "assets/images/behandlinger/konsultasjon.png", alt: "Personlig hudkonsultasjon i lyse klinikkomgivelser" },
+  { id: "vipper-bryn", name: "Vipper og bryn", intro: "Farge, forming, laminering og vippeløft.", image: "assets/images/behandlinger/vipper-og-bryn.png", alt: "Profesjonell behandling av vipper og bryn" },
+  { id: "harfjerning", name: "Hårfjerning", intro: "Voksbehandlinger for kvinner, enkeltområder og pakker.", image: "assets/images/behandlinger/harfjerning.png", alt: "Profesjonell hårfjerning med voks på leggen" },
+  { id: "kropp", name: "Kropp", intro: "Peelinger og dyprensende behandlinger for kroppen.", image: "assets/images/behandlinger/kroppsbehandling.png", alt: "Eksfolierende kroppsbehandling på ryggen" },
   { id: "fot", name: "Fotbehandling", intro: "Fotpleie og spa-pedikyr for friske føtter.", image: "assets/images/behandlinger/fotbehandling.png", alt: "Profesjonell fotbehandling i lyse omgivelser" },
   { id: "massasje", name: "Massasje", intro: "Avslappende hodebunnsmassasje for kvinner.", image: "assets/images/behandlinger/hodebunnsmassasje.png", alt: "Avslappende hodebunnsmassasje" }
 ];

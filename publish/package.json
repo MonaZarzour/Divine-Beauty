@@ -1,0 +1,9 @@
+{
+  "name": "divine-beauty-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "media:update": "node scripts/generate-media-manifest.mjs",
+    "dev": "node scripts/serve.mjs"
+  }
+}
