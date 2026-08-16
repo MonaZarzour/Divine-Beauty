@@ -14,8 +14,8 @@ export const initBackgroundAudio = () => {
   const updateToggle = () => {
     const audible = !audio.paused && !audio.muted;
     toggle.setAttribute("aria-pressed", String(audible));
-    toggle.setAttribute("aria-label", audible ? "Slå av bakgrunnsmusikk" : "Slå på bakgrunnsmusikk");
-    label.textContent = audible ? "Lyd av" : "Lyd på";
+    toggle.setAttribute("aria-label", audible ? "Slå av bakgrunnsmusikk" : "Start bakgrunnsmusikk");
+    label.textContent = audible ? "Lyd av" : "Start musikk";
   };
   const beginMuted = async () => {
     try { await audio.play(); } catch { updateToggle(); }

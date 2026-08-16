@@ -1,5 +1,5 @@
-import { resultMedia } from "../data/media-manifest.js";
-import { filterExistingMedia } from "../utils/media.js";
+import { resultMedia } from "../data/media-manifest.js?v=2";
+import { filterExistingMedia } from "../utils/media.js?v=2";
 
 const AUTOPLAY_DELAY = 4200;
 

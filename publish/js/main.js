@@ -3,18 +3,20 @@ import { initNavigation } from "./components/navigation.js";
 import { initMobileMenu } from "./components/mobile-menu.js";
 import { initTabs } from "./components/tabs.js";
 import { initModals } from "./components/modal.js";
-import { initTreatmentFilters } from "./components/treatment-filters.js";
+import { initTreatmentFilters } from "./components/treatment-filters.js?v=2";
 import { initScrollAnimations } from "./components/scroll-animations.js";
 import { initActiveSection } from "./components/active-section.js";
 import { initBeforeAfterSliders } from "./components/before-after-slider.js?v=3";
-import { initResultsCarousels } from "./components/results-carousel.js?v=5";
-import { initVideoCarousels } from "./components/video-carousel.js?v=3";
+import { initResultsCarousels } from "./components/results-carousel.js?v=6";
+import { initVideoCarousels } from "./components/video-carousel.js?v=4";
 import { initContactLinks } from "./components/contact-links.js";
 import { initPrivacyNotice } from "./components/privacy-notice.js";
 import { initBackToTop } from "./components/back-to-top.js";
-import { initBackgroundAudio } from "./components/background-audio.js?v=3";
+import { initBackgroundAudio } from "./components/background-audio.js?v=4";
+import { applyAssetVersions } from "./utils/media.js?v=2";
 
 document.addEventListener("DOMContentLoaded", () => {
+  applyAssetVersions();
   initRouter();
   initNavigation();
   initMobileMenu();

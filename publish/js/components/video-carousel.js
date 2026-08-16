@@ -1,9 +1,9 @@
-import { videoMedia } from "../data/media-manifest.js";
-import { filterExistingMedia } from "../utils/media.js";
+import { videoMedia } from "../data/media-manifest.js?v=2";
+import { filterExistingMedia } from "../utils/media.js?v=2";
 
 const AUTOPLAY_DELAY = 5200;
 
-const mediaType = (src) => src.toLowerCase().endsWith(".webm") ? "video/webm" : "video/mp4";
+const mediaType = (src) => src.split("?", 1)[0].toLowerCase().endsWith(".webm") ? "video/webm" : "video/mp4";
 
 const renderSlides = (track, media) => {
   const fragment = document.createDocumentFragment();

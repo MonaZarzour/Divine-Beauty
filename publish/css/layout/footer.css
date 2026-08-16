@@ -3,8 +3,8 @@
 .site-footer__contact h2,.site-footer h2{color:var(--color-primary-dark);font-family:var(--font-body);font-size:.78rem;font-weight:750;letter-spacing:.14em;text-transform:uppercase;margin:0}
 .site-footer__actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:.7rem}
 .site-footer__actions .button{min-height:2.8rem;padding:.65rem 1.1rem}
-.site-footer__social{display:grid;place-items:center;width:2.8rem;height:2.8rem;flex:0 0 2.8rem;color:var(--color-primary-deep);background:rgba(255,255,255,.82);border:1px solid rgba(124,101,112,.18);border-radius:50%;transition:transform var(--transition-fast),background var(--transition-fast),color var(--transition-fast)}
-.site-footer__social:hover{transform:translateY(-2px);background:#fff;color:var(--color-primary-dark)}
+.site-footer__social{display:grid;place-items:center;width:2.8rem;height:2.8rem;flex:0 0 2.8rem;color:#fff;background:linear-gradient(135deg,#feda75 0%,#fa7e1e 23%,#d62976 50%,#962fbf 74%,#4f5bd5 100%);border:1px solid rgba(255,255,255,.55);border-radius:.85rem;box-shadow:0 .45rem 1rem rgba(150,47,123,.2);transition:transform var(--transition-fast),filter var(--transition-fast)}
+.site-footer__social:hover{transform:translateY(-2px);filter:saturate(1.1) brightness(1.05);color:#fff}
 .site-footer__social:focus-visible{outline:3px solid var(--color-secondary);outline-offset:3px}
 .site-footer__social svg{width:1.25rem;height:1.25rem;fill:none;stroke:currentColor;stroke-width:1.7}
 .site-footer__social .site-footer__social-dot{fill:currentColor;stroke:none}
@@ -14,6 +14,7 @@
 .site-footer nav,.site-footer address{display:flex;flex-direction:column;align-items:flex-start;gap:.55rem}
 .site-footer a{color:var(--color-heading);text-decoration:none}
 .site-footer a:hover{color:var(--color-primary-dark)}
+.site-footer a.site-footer__social,.site-footer a.site-footer__social:hover{color:#fff}
 .brand--footer{display:inline-flex;padding:.4rem .55rem;border-radius:var(--radius-md);background:rgba(255,255,255,.55)}
 .brand--footer .brand__logo{width:min(11rem,100%)}
 .site-footer__legal{margin-top:4rem;padding-top:1.5rem;border-top:1px solid rgba(124,101,112,.28);display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;font-size:.78rem;color:var(--color-text-muted)}
