@@ -7,7 +7,7 @@ import { initModals } from "./components/modal.js";
 import { initTreatmentFilters } from "./components/treatment-filters.js";
 import { initScrollAnimations } from "./components/scroll-animations.js";
 import { initActiveSection } from "./components/active-section.js";
-import { initBeforeAfterSliders } from "./components/before-after-slider.js";
+import { initBeforeAfterSliders } from "./components/before-after-slider.js?v=2";
 import { initContactLinks } from "./components/contact-links.js";
 import { initPrivacyNotice } from "./components/privacy-notice.js";
 import { initBackToTop } from "./components/back-to-top.js";
