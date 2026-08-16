@@ -1,5 +1,5 @@
 {
-  "notice": "Medisinsk innhold og priser skal kvalitetssikres før publisering.",
+  "notice": "Eldre behandlingsutkast. Den aktive katalogen vedlikeholdes i js/data/treatments.js.",
   "items": [
     {"id":"konsultasjon","name":"Hudkonsultasjon","category":"ansikt","duration":"30–45 min"},
     {"id":"signatur","name":"Signatur ansiktsbehandling","category":"ansikt fuktighet","duration":"60 min"},

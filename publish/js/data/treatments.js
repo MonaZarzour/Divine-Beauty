@@ -9,8 +9,8 @@ export const treatmentCategories = [
   { id: "vipper-bryn", name: "Vipper og bryn", intro: "Farge, forming, laminering og vippeløft.", image: "assets/images/behandlinger/sensitiv.jpg", alt: "Produkter til skjønnhetsbehandling" },
   { id: "harfjerning", name: "Hårfjerning", intro: "Voksbehandlinger for kvinner, enkeltområder og pakker.", image: "assets/images/behandlinger/fuktighet.jpg", alt: "Produkter brukt ved skånsom behandling" },
   { id: "kropp", name: "Kropp", intro: "Peelinger og dyprensende behandlinger for kroppen.", image: "assets/images/behandlinger/peeling.jpg", alt: "Produkter klargjort for peeling" },
-  { id: "fot", name: "Fotbehandling", intro: "Fotpleie og spa-pedikyr for friske føtter." },
-  { id: "massasje", name: "Massasje", intro: "Avslappende hodebunnsmassasje for kvinner." }
+  { id: "fot", name: "Fotbehandling", intro: "Fotpleie og spa-pedikyr for friske føtter.", image: "assets/images/behandlinger/fotbehandling.png", alt: "Profesjonell fotbehandling i lyse omgivelser" },
+  { id: "massasje", name: "Massasje", intro: "Avslappende hodebunnsmassasje for kvinner.", image: "assets/images/behandlinger/hodebunnsmassasje.png", alt: "Avslappende hodebunnsmassasje" }
 ];
 
 const treatment = (id, category, name, price, description, options = {}) => ({

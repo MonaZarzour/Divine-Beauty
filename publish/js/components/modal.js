@@ -3,10 +3,10 @@ import { specialists } from "../data/specialists.js";
 import { clinicConfig } from "../core/config.js";
 
 const legalContent = {
-  personvern: ["Personvern", "Dette statiske nettstedet samler ikke inn eller sender personopplysninger. Ikke send helseopplysninger på vanlig e-post. Dersom eksterne tjenester legges til senere, må personvernteksten oppdateres før publisering."],
+  personvern: ["Personvern", "Dette statiske nettstedet samler ikke inn eller sender personopplysninger. Bestilling og betaling skjer hos Timma, som har egne personvernvilkår."],
   informasjonskapsler: ["Informasjonskapsler", "Nettstedet bruker ingen analyse- eller markedsføringskapsler. Nettleserens lokale lagring brukes bare for å huske at personvernmeldingen er lukket."],
-  vilkar: ["Generelle vilkår", "Informasjonen er generell og erstatter ikke individuell vurdering. Behandlingens egnethet vurderes individuelt, og resultater varierer fra person til person. Klinikkopplysninger og medisinsk innhold må kvalitetssikres før publisering."],
-  tilgjengelighet: ["Tilgjengelighet", "Nettstedet er utviklet med tastaturnavigasjon, synlige fokusmarkeringer, semantisk struktur og støtte for redusert bevegelse. Meld gjerne fra til [E-postadresse] dersom du møter en barriere."]
+  vilkar: ["Generelle vilkår", "Informasjonen er generell. Behandlingens egnethet vurderes individuelt, og resultater varierer fra person til person. Gjeldende priser og tilgjengelige timer vises i Timma."],
+  tilgjengelighet: ["Tilgjengelighet", "Nettstedet er utviklet med tastaturnavigasjon, synlige fokusmarkeringer, semantisk struktur og støtte for redusert bevegelse. Kontakt klinikken på telefon dersom du møter en barriere."]
 };
 
 const treatmentMarkup = (item) => {

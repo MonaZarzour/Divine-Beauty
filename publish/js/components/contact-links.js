@@ -4,11 +4,8 @@ const setTextAndHref = (selector, text, href) => document.querySelectorAll(selec
 
 export const initContactLinks = () => {
   setTextAndHref("[data-config-phone]", clinicConfig.phoneDisplay, clinicConfig.phoneHref);
-  setTextAndHref("[data-config-email]", clinicConfig.email, clinicConfig.emailHref);
   document.querySelectorAll("[data-config-phone-link]").forEach((link) => link.href = clinicConfig.phoneHref);
-  document.querySelectorAll("[data-config-email-link]").forEach((link) => link.href = `${clinicConfig.emailHref}?subject=Forespørsel%20om%20hudbehandling`);
   document.querySelectorAll("[data-config-address]").forEach((element) => element.innerHTML = `${clinicConfig.address}<br>${clinicConfig.postalCode} ${clinicConfig.city}`);
-  document.querySelectorAll("[data-config-hours]").forEach((element) => element.textContent = clinicConfig.openingHours);
   document.querySelectorAll("[data-config-place]").forEach((element) => element.textContent = clinicConfig.city);
   document.querySelectorAll("[data-config-map]").forEach((link) => link.href = clinicConfig.mapUrl);
   document.querySelectorAll("[data-config-booking]").forEach((link) => {

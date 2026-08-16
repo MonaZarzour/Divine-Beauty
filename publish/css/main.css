@@ -23,12 +23,12 @@
 @import url("./components/alerts.css");
 @import url("./components/section-navigation.css");
 @import url("./components/floating-actions.css");
-@import url("./sections/hero.css");
+@import url("./sections/hero.css?v=4");
 @import url("./sections/trust.css");
 @import url("./sections/treatments.css");
 @import url("./sections/process.css");
 @import url("./sections/about.css");
-@import url("./sections/specialists.css");
+@import url("./sections/specialists.css?v=4");
 @import url("./sections/results.css");
 @import url("./sections/testimonials-section.css");
 @import url("./sections/faq.css");
@@ -36,4 +36,4 @@
 @import url("./utilities/spacing.css");
 @import url("./utilities/display.css");
 @import url("./utilities/animations.css");
-@import url("./utilities/responsive.css");
+@import url("./utilities/responsive.css?v=4");
