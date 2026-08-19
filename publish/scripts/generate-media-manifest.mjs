@@ -6,6 +6,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const outputFile = resolve(projectRoot, "js/data/media-manifest.js");
 const collator = new Intl.Collator("nb", { numeric: true, sensitivity: "base" });
+const imageExtensions = new Set([".jpg", ".jpeg", ".png", ".webp", ".avif"]);
 
 const scan = async (folder, extensions) => {
   const absoluteFolder = resolve(projectRoot, folder);
@@ -34,18 +35,41 @@ const createAssetVersions = async () => {
   return Object.fromEntries(pairs);
 };
 
+const createComparisonPairs = (paths, type, label, version) => {
+  const groups = new Map();
+  paths.forEach((path) => {
+    const file = path.split("/").at(-1);
+    const extension = extname(file);
+    const match = file.slice(0, -extension.length).match(/^(.+)-([12])$/);
+    if (!match) return;
+    const [, key, position] = match;
+    const group = groups.get(key) || { id: `${type}-${key}`, label };
+    group[position === "1" ? "before" : "after"] = version(path);
+    groups.set(key, group);
+  });
+  return [...groups.values()]
+    .filter((pair) => pair.before && pair.after)
+    .sort((left, right) => collator.compare(left.id, right.id));
+};
+
 export const generateMediaManifest = async () => {
-  const results = await scan("assets/images/resultater", new Set([".jpg", ".jpeg", ".png", ".webp", ".avif"]));
+  const results = await scan("assets/images/resultater", imageExtensions);
   const videos = await scan("assets/images/Video", new Set([".mp4", ".webm"]));
+  const eyebrowMedia = await scan("assets/images/øyebryn", imageExtensions);
+  const eyelashMedia = await scan("assets/images/øyevipper", imageExtensions);
   const assetVersions = await createAssetVersions();
   const version = (path) => `${path}?v=${assetVersions[path]}`;
-  const source = `// Generated from the media folders. Run npm run media:update before publishing.\nexport const assetVersions = ${JSON.stringify(assetVersions, null, 2)};\n\nexport const resultMedia = ${JSON.stringify(results.map(version), null, 2)};\n\nexport const videoMedia = ${JSON.stringify(videos.map(version), null, 2)};\n`;
+  const comparisonPairs = [
+    ...createComparisonPairs(eyebrowMedia, "bryn", "Brynbehandling", version),
+    ...createComparisonPairs(eyelashMedia, "vipper", "Vippeløft", version),
+  ];
+  const source = `// Generated from the media folders. Run npm run media:update before publishing.\nexport const assetVersions = ${JSON.stringify(assetVersions, null, 2)};\n\nexport const comparisonPairs = ${JSON.stringify(comparisonPairs, null, 2)};\n\nexport const resultMedia = ${JSON.stringify(results.map(version), null, 2)};\n\nexport const videoMedia = ${JSON.stringify(videos.map(version), null, 2)};\n`;
   await mkdir(dirname(outputFile), { recursive: true });
   await writeFile(outputFile, source, "utf8");
-  return { results: results.length, videos: videos.length };
+  return { results: results.length, videos: videos.length, comparisons: comparisonPairs.length };
 };
 
 if (process.argv[1] && pathToFileURL(resolve(process.argv[1])).href === import.meta.url) {
   const counts = await generateMediaManifest();
-  console.log(`Media manifest updated: ${counts.results} resultater, ${counts.videos} videoer.`);
+  console.log(`Media manifest updated: ${counts.results} resultater, ${counts.videos} videoer, ${counts.comparisons} før/etter-par.`);
 }

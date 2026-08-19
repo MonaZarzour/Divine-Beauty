@@ -1,0 +1,230 @@
+# Legg inn én vurdering per blokk. Skill vurderingene med en linje som bare inneholder ---
+# Fjern # foran eksempelet når du vil bruke det. Ikke legg inn vurderinger uten tillatelse.
+#
+# Navn: Fornavn eller Anonym kunde
+# Stjerner: 5
+# Dato: 2025
+# Kommentar: Skriv eller lim inn kundens kommentar her.
+# ---
+
+Navn: Jorunn H.
+Stjerner: 5
+Dato: August 2026
+Kommentar: Dyktig behandler Behagelig og meget og hygiene.
+---
+
+Navn: Sandra R.
+Stjerner: 5
+Dato: August 2026
+Kommentar: Så omsorgsfull, dyktig og profesjonell
+---
+
+Navn: Ida E.
+Stjerner: 5
+Dato: August 2026
+Kommentar: Voksing: første gang å teste voksing, og følte meg godt ivaretatt. Følte behandlingen var tilpasset, og var og kommunikasjon underveis. Anbefales!
+---
+
+Navn: Jorunn S. H.
+Stjerner: 5
+Dato: August 2026
+Kommentar: Dyktig fotterapeut hyggelig og omsorgsfull
+---
+
+Navn: Mie C. H.
+Stjerner: 5
+Dato: August 2026
+Kommentar: Kjempefornøyd med Talin! Profesjonell, nøyaktig og utrolig hyggelig. Kjempefint lokalet også. Anbefales på det sterkeste.
+---
+
+Navn: Kristin N. S.
+Stjerner: 5
+Dato: August 2026
+Kommentar: Veldig veldig fornøyd! Tatt brasiliansk flere ganger hos forskjellige folk, men dette var desidert beste opplevelsen. Ikke vondt i det hele tatt og veldig nøye!
+---
+
+Navn: Camilla B.
+Stjerner: 5
+Dato: Juli 2026
+Kommentar: Talin var kjempeflink!! Følte meg trygg unde hele prosessen og ble veldig fornøyd med resultatet ❤️
+---
+
+Navn: Aurora
+Stjerner: 5
+Dato: Juli 2026
+Kommentar: Alltid fornøyd ❤️
+---
+
+Navn: Bettina M.
+Stjerner: 5
+Dato: Juli 2026
+Kommentar: Veldig hyggelig og dyktig!
+---
+
+Navn: Sandra R.
+Stjerner: 5
+Dato: Juli 2026
+Kommentar: God kundebehandling, forsiktig og nøye. Trivelig atmosfære
+---
+
+Navn: Hevine O.
+Stjerner: 5
+Dato: Juli 2026
+Kommentar: Har vært på flere behandlinger hos henne, alltid hadde de beste opplevelsene. Fra renhet og alt mulig. Du får de beste rådene hos henne! A must try synes jeg!
+---
+
+Navn: Vilde B. N.
+Stjerner: 5
+Dato: Juli 2026
+Kommentar: Talin var vennlig, effektiv og dyktig på voksing!
+---
+
+Navn: Siri S.
+Stjerner: 5
+Dato: Juni 2026
+Kommentar: Hyggelig lokale behagelig atmosfære og veldig fornøyd med behandlingen.
+---
+
+Navn: Jorunn S. H.
+Stjerner: 5
+Dato: Juni 2026
+Kommentar: Dyktig fotterapeut, hyggelig og god atmosfære.
+---
+
+Navn: Emily L. D.
+Stjerner: 5
+Dato: Juni 2026
+Kommentar: Fantastisk duktig och service-minded, gav mig fine råd om produkter osv.
+---
+
+Navn: Nina E.
+Stjerner: 5
+Dato: Juni 2026
+Kommentar: Veldig hyggelig og mild under behandlingen - anbefales ❤️
+---
+
+Navn: Isabella N.
+Stjerner: 5
+Dato: Juni 2026
+Kommentar: Utrolig søte folk. kjempedyktige i jobben dem gjør! Gir virkelig bra resultat!
+---
+
+Navn: Pia A.
+Stjerner: 5
+Dato: Juni 2026
+Kommentar: Veldig fin salong, og utrolig dyktig på vipper!
+---
+
+Navn: Anna M.
+Stjerner: 5
+Dato: Juni 2026
+Kommentar: Veldig flink og profesjonell! Det er andre gang jeg tar vippeløft hos Talin, og er veldig fornøyd!
+---
+
+Navn: Zubana H.
+Stjerner: 5
+Dato: Juni 2026
+Kommentar: Jeg hadde en hydrafacial hos Talin og opplevelsen var svært god. Hun har rolige og trygge hender, og jobbet med stor presisjon gjennom hele behandlingen. Huden føltes ren, frisk og myk etterpå. Jeg følte meg godt ivaretatt fra start til slutt. Anbefales til deg som ønsker kvalitet og en behagelig opplevelse.
+---
+
+Navn: Sandra k.
+Stjerner: 5
+Dato: Juni 2026
+Kommentar: Nøye og behagelig behandler. Blir alltid veldig fornøyd!
+---
+
+Navn: Veronica V.
+Stjerner: 5
+Dato: Juni 2026
+Kommentar: Flotte omgivelser og proff behandling. Tusen takk ❤️
+---
+
+Navn: Nora S. B.
+Stjerner: 5
+Dato: Juni 2026
+Kommentar: Beste fotbehandling jeg har vært på! Talin er så flink
+---
+
+Navn: Maria H.
+Stjerner: 5
+Dato: Juni 2026
+Kommentar: Jeg tok vippeløft og ble utrolig fornøyd med resultatet! Alt i alt en behagelig opplevelse ❤️ Kommer hit igjen
+---
+
+Navn: Eline H.
+Stjerner: 5
+Dato: Juni 2026
+Kommentar: Veldig hyggelig dame! Nøyaktig og flink ❤️
+---
+
+Navn: Susanne
+Stjerner: 5
+Dato: Juni 2026
+Kommentar: Veldig fornøyd!
+---
+
+Navn: Aurora
+Stjerner: 5
+Dato: mai 2026
+Kommentar: Talin er verdens beste! Anbefaler på det sterkeste, hun er så nøye og flink og profesjonell ❤️
+---
+
+Navn: Jennifer S.
+Stjerner: 5
+Dato: Mai 2026
+Kommentar: Very happy With the results and it was not painful at all!! Highly recommended
+---
+
+Navn: Jorunn. S. H.
+Stjerner: 5
+Dato: Mai 2026
+Kommentar: Veldig behagelig og flott behandling. Anbefaler denne dyktige terapeuten.
+---
+
+Navn: Jorunn H.
+Stjerner: 5
+Dato: Mai 2026
+Kommentar: Dyktig fotterapeut. Vennlig, delikat, hygienisk, hyggelig, fint og sentralt lokale.
+---
+
+Navn: Laura H.
+Stjerner: 5
+Dato: Mai 2026
+Kommentar: Talin er utrolig dyktig på hud, og behandlingen var både effektiv og behagelig! I tillegg er klinikken ren og innbydende
+---
+
+Navn: Kristina B.
+Stjerner: 5
+Dato: Mai 2026
+Kommentar: Grundig og veldig flink. God atmosfære, og anbefales absolutt!
+---
+
+Navn: Berit L.
+Stjerner: 5
+Dato: Mai 2026
+Kommentar: Dyktig dame
+---
+
+Navn: Christel H.
+Stjerner: 5
+Dato: Mai 2026
+Kommentar: Fornøyd med behandlingen. Fikk forklart hva som ble gjort, og spurt underveis slik at det ble slik jeg ønsket
+---
+
+Navn: Silje A. S.
+Stjerner: 5
+Dato: Mai 2026
+Kommentar: Valgte denne salongen fordi den hadde fått så god rating, og det er virkelig en grunn til! Talin er kjempeflink og jeg har aldri hatt så fine vipper før!!
+---
+
+Navn: Hevine O.
+Stjerner: 5
+Dato: Mai 2026
+Kommentar: Behandlingen går alltid som forventet, jeg er ekstremt glad med hennes arbeid. Arbeidet er veldig pent, ryddig og bare bra bra. Anbefaler det myee!
+---
+
+Navn: Kristiane J..
+Stjerner: 5
+Dato: Mai 2026
+Kommentar: Veldig fornøyd med vippeløftsbehandling av Talin. Veldig hyggelig og trygg atmosfære. Hun forklarte alle stegene hun gjorde sånn at man følte seg ivaretatt underveis i hele behandlinge!
+---

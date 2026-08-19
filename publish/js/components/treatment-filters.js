@@ -1,5 +1,5 @@
 import { activeTreatments, treatmentCategories } from "../data/treatments.js";
-import { versionedAssetPath } from "../utils/media.js?v=2";
+import { versionedAssetPath } from "../utils/media.js?v=4";
 
 const categoryCard = (category) => {
   const items = activeTreatments.filter((item) => item.category === category.id);

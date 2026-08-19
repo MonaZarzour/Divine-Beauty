@@ -1,5 +1,6 @@
-export const initBeforeAfterSliders = () => {
-  document.querySelectorAll("[data-comparison]").forEach((component) => {
+export const initBeforeAfterSliders = (root = document) => {
+  root.querySelectorAll("[data-comparison]").forEach((component) => {
+    if (component.dataset.comparisonReady) return;
     const range = component.querySelector("[data-comparison-range]");
     const before = component.querySelector("[data-comparison-before]");
     const handle = component.querySelector("[data-comparison-handle]");
@@ -11,6 +12,7 @@ export const initBeforeAfterSliders = () => {
       range.setAttribute("aria-valuenow", range.value);
     };
     range.addEventListener("input", update);
+    component.dataset.comparisonReady = "true";
     update();
   });
 };

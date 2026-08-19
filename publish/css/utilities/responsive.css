@@ -8,3 +8,4 @@
 .specialist-grid{grid-template-columns:1fr}
 @media(min-width:1024px){:root{--header-offset:5.4rem}}
 @media(min-width:768px){.site-footer__grid{grid-template-columns:1.4fr repeat(2,1fr)}}
+@media(min-width:1024px){.hero__grid{grid-template-columns:1fr 1fr}.hero__visual{width:min(40vw,42rem);max-width:none}}

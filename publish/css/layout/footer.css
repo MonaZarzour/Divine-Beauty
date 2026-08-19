@@ -3,11 +3,14 @@
 .site-footer__contact h2,.site-footer h2{color:var(--color-primary-dark);font-family:var(--font-body);font-size:.78rem;font-weight:750;letter-spacing:.14em;text-transform:uppercase;margin:0}
 .site-footer__actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:.7rem}
 .site-footer__actions .button{min-height:2.8rem;padding:.65rem 1.1rem}
+.site-footer__socials{display:flex;align-items:center;gap:.7rem;flex:0 0 auto}
 .site-footer__social{display:grid;place-items:center;width:2.8rem;height:2.8rem;flex:0 0 2.8rem;color:#fff;background:linear-gradient(135deg,#feda75 0%,#fa7e1e 23%,#d62976 50%,#962fbf 74%,#4f5bd5 100%);border:1px solid rgba(255,255,255,.55);border-radius:.85rem;box-shadow:0 .45rem 1rem rgba(150,47,123,.2);transition:transform var(--transition-fast),filter var(--transition-fast)}
 .site-footer__social:hover{transform:translateY(-2px);filter:saturate(1.1) brightness(1.05);color:#fff}
 .site-footer__social:focus-visible{outline:3px solid var(--color-secondary);outline-offset:3px}
 .site-footer__social svg{width:1.25rem;height:1.25rem;fill:none;stroke:currentColor;stroke-width:1.7}
 .site-footer__social .site-footer__social-dot{fill:currentColor;stroke:none}
+.site-footer__social--tiktok{background:linear-gradient(145deg,#d9b4b7 0%,#b77f87 48%,#8f5b78 100%);box-shadow:0 .45rem 1rem rgba(108,48,79,.22)}
+.site-footer__social--tiktok svg{fill:currentColor;stroke:none}
 .site-footer__grid{display:grid;gap:2.5rem;padding-top:4rem}
 .site-footer__grid h2{margin-bottom:1.1rem}
 .site-footer__grid>div:first-child p{color:var(--color-text-muted);margin-top:1.4rem}

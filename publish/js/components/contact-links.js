@@ -1,4 +1,4 @@
-import { clinicConfig } from "../core/config.js";
+import { clinicConfig } from "../core/config.js?v=2";
 
 const setTextAndHref = (selector, text, href) => document.querySelectorAll(selector).forEach((element) => { element.textContent = text; element.setAttribute("href", href); });
 
@@ -15,6 +15,7 @@ export const initContactLinks = () => {
   });
   const socialLinks = [
     ["[data-config-instagram]", clinicConfig.instagram],
+    ["[data-config-tiktok]", clinicConfig.tiktok],
     ["[data-config-facebook]", clinicConfig.facebook]
   ];
   socialLinks.forEach(([selector, href]) => document.querySelectorAll(selector).forEach((link) => {
@@ -23,7 +24,7 @@ export const initContactLinks = () => {
     else link.removeAttribute("href");
   }));
   document.querySelectorAll("[data-config-social]").forEach((container) => {
-    container.hidden = !clinicConfig.instagram && !clinicConfig.facebook;
+    container.hidden = !clinicConfig.instagram && !clinicConfig.tiktok && !clinicConfig.facebook;
   });
   document.querySelectorAll("[data-current-year]").forEach((element) => element.textContent = new Date().getFullYear());
 };

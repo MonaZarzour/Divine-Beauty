@@ -1,1 +1,12 @@
-.testimonials-section{background:var(--gradient-pink-reverse)}.testimonials-section .section-heading>p:last-child{color:var(--color-text-muted)}
+.testimonials-section{background:linear-gradient(145deg,#faf7f5 0%,#f4e8e8 48%,#eacfd1 100%)}
+.testimonials-section .section-heading>p:last-child{color:var(--color-text-muted)}
+.reviews-carousel{width:min(100%,52rem);margin:clamp(2rem,5vw,3.5rem) auto 0}
+.reviews-carousel:focus-visible{outline:3px solid var(--color-secondary);outline-offset:4px}
+.reviews-carousel__viewport{position:relative;min-height:clamp(22rem,48vw,28rem);overflow:hidden;border:1px solid rgba(255,255,255,.72);border-radius:clamp(1.5rem,4vw,2.5rem);background:rgba(255,255,255,.58);box-shadow:0 1.4rem 4rem rgba(108,48,79,.12),inset 0 1px 0 rgba(255,255,255,.85);backdrop-filter:blur(14px)}
+.reviews-carousel__track{position:absolute;inset:0}
+.reviews-carousel__controls{display:flex;align-items:center;justify-content:center;gap:1rem;padding-top:1.1rem}
+.reviews-carousel__controls button{display:grid;place-items:center;width:2.65rem;height:2.65rem;border:1px solid rgba(154,79,116,.22);border-radius:50%;background:rgba(255,255,255,.72);color:var(--color-primary-deep);box-shadow:var(--shadow-sm);cursor:pointer}
+.reviews-carousel__controls button:hover,.reviews-carousel__controls button:focus-visible{background:#fff}
+.reviews-carousel__controls span{min-width:4rem;text-align:center;font-size:.72rem;font-weight:800;letter-spacing:.08em;color:var(--color-primary-dark)}
+@media(max-width:559px){.reviews-carousel__viewport{min-height:27rem}.review-card footer{align-items:start;flex-direction:column}.review-card__source{align-self:flex-end}}
+@media(prefers-reduced-motion:reduce){.review-card{transition:none}}

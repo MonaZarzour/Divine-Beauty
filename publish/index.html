@@ -12,7 +12,7 @@
   <meta property="og:description" content="Faglig veiledning og skånsom hudpleie, tilpasset deg.">
   <link rel="icon" href="assets/images/branding/favicon.svg?v=gold" type="image/svg+xml">
   <link rel="alternate icon" href="favicon.ico">
-  <link rel="stylesheet" href="css/main.css?v=13">
+  <link rel="stylesheet" href="css/main.css?v=27">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -64,21 +64,41 @@
             <li><span aria-hidden="true">✓</span> Trygge rutiner</li>
             <li><span aria-hidden="true">✓</span> Tydelig etterpleie</li>
           </ul>
+          <div class="hero__awards" aria-label="Toppvurdert på Timma i 2024 og 2025">
+            <img src="SVG/timma2024.svg" width="536" height="717" draggable="false" alt="Toppvurdert på Timma av våre kunder i 2024">
+            <img src="SVG/timma2025.svg" width="536" height="717" draggable="false" alt="Toppvurdert på Timma av våre kunder i 2025">
+          </div>
         </div>
         <figure class="hero__visual" data-reveal>
-          <img src="assets/images/hero/hero-clinic.jpg" width="900" height="1120" alt="Hudterapeut som utfører en rolig og profesjonell hudbehandling">
-          <figcaption class="hero__note"><strong>Personlig hudplan</strong><span>Basert på hudens behov og dine mål</span></figcaption>
+          <img src="assets/images/hero/hero-clinic.jpeg" width="1448" height="1086" alt="Behandlingsrom hos Divine Beauty">
         </figure>
       </div>
       <div class="hero__scroll" aria-hidden="true">Utforsk <span></span></div>
     </section>
 
-    <section id="tillit" class="trust-strip" aria-label="Våre kvalitetsprinsipper">
-      <div class="container trust-strip__grid">
-        <article class="trust-item"><span class="icon-badge" aria-hidden="true">◇</span><div><h2>Kvalifisert veiledning</h2><p>Råd tilpasset huden din.</p></div></article>
-        <article class="trust-item"><span class="icon-badge" aria-hidden="true">✦</span><div><h2>Høy hygienestandard</h2><p>Rene og trygge rutiner.</p></div></article>
-        <article class="trust-item"><span class="icon-badge" aria-hidden="true">◌</span><div><h2>Realistiske forventninger</h2><p>Åpen og tydelig kommunikasjon.</p></div></article>
-        <article class="trust-item"><span class="icon-badge" aria-hidden="true">→</span><div><h2>God etterpleie</h2><p>Veiledning også etter behandling.</p></div></article>
+    <section id="behandlere" class="section specialists-section" aria-labelledby="specialists-title" data-route-title="Behandlere">
+      <div class="container">
+        <header class="section-heading section-heading--center"><p class="eyebrow">Hovedbehandler</p><h2 id="specialists-title">Møt Talin</h2><p>Personlig veiledning og behandling i rolige, profesjonelle omgivelser.</p></header>
+        <div class="specialist-grid">
+          <article class="specialist-card" data-reveal>
+            <div class="specialist-card__media"><img class="specialist-card__portrait" src="assets/images/behandlere/Talin.jpeg" width="1320" height="2339" loading="lazy" alt="Talin, hovedbehandler hos Divine Beauty"></div>
+            <div class="specialist-card__content"><p class="eyebrow">Hovedbehandler</p><h3>Talin</h3><p>«Jeg ønsker at hver kunde skal forstå huden sin og føle seg trygg på valgene vi tar sammen.»</p><ul><li>Personlig veiledning</li><li>Individuelt tilpassede behandlinger</li><li>Rolig og profesjonell oppfølging</li></ul><div class="specialist-card__actions"><button class="button button--text" type="button" data-specialist-open="talin">Les mer om Talin</button><a href="#kontakt" aria-label="Kontakt klinikken om Talin">Kontakt klinikken</a></div>
+            <section id="vurderinger" class="specialist-card__reviews" aria-labelledby="testimonials-title" data-reviews-section hidden>
+              <header class="specialist-card__reviews-heading">
+                <h3 id="testimonials-title">Dette sier kundene</h3>
+              </header>
+              <div class="reviews-carousel" aria-label="Kundeomtaler" data-reviews-carousel tabindex="0">
+                <div class="reviews-carousel__viewport"><div class="reviews-carousel__track" data-reviews-track></div></div>
+                <footer class="reviews-carousel__controls">
+                  <button type="button" aria-label="Vis forrige vurdering" data-reviews-prev>←</button>
+                  <span aria-live="polite" data-reviews-status></span>
+                  <button type="button" aria-label="Vis neste vurdering" data-reviews-next>→</button>
+                </footer>
+              </div>
+            </section>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -92,52 +112,25 @@
       </div>
     </section>
 
-    <section id="behandlere" class="section specialists-section" aria-labelledby="specialists-title" data-route-title="Behandlere">
-      <div class="container">
-        <header class="section-heading section-heading--center"><p class="eyebrow">Hovedbehandler</p><h2 id="specialists-title">Møt Talin</h2><p>Personlig veiledning og behandling i rolige, profesjonelle omgivelser.</p></header>
-        <div class="specialist-grid">
-          <article class="specialist-card" data-reveal>
-            <div class="specialist-card__media"><img class="specialist-card__portrait" src="assets/images/behandlere/Talin.jpeg" width="1320" height="2339" loading="lazy" alt="Talin, hovedbehandler hos Divine Beauty"></div>
-            <div class="specialist-card__content"><p class="eyebrow">Hovedbehandler</p><h3>Talin</h3><p>«Jeg ønsker at hver kunde skal forstå huden sin og føle seg trygg på valgene vi tar sammen.»</p><ul><li>Personlig veiledning</li><li>Individuelt tilpassede behandlinger</li><li>Rolig og profesjonell oppfølging</li></ul><div class="specialist-card__actions"><button class="button button--text" type="button" data-specialist-open="talin">Les mer om Talin</button><a href="#kontakt" aria-label="Kontakt klinikken om Talin">Kontakt klinikken</a></div></div>
-          </article>
-        </div>
+    <section id="tillit" class="trust-strip" aria-label="Våre kvalitetsprinsipper">
+      <div class="container trust-strip__grid">
+        <article class="trust-item"><span class="icon-badge" aria-hidden="true">◇</span><div><h2>Kvalifisert veiledning</h2><p>Råd tilpasset huden din.</p></div></article>
+        <article class="trust-item"><span class="icon-badge" aria-hidden="true">✦</span><div><h2>Høy hygienestandard</h2><p>Rene og trygge rutiner.</p></div></article>
+        <article class="trust-item"><span class="icon-badge" aria-hidden="true">◌</span><div><h2>Realistiske forventninger</h2><p>Åpen og tydelig kommunikasjon.</p></div></article>
+        <article class="trust-item"><span class="icon-badge" aria-hidden="true">→</span><div><h2>God etterpleie</h2><p>Veiledning også etter behandling.</p></div></article>
       </div>
     </section>
 
     <section id="resultater" class="section results-section" aria-labelledby="results-title" data-route-title="Resultater">
       <div class="container results-section__grid">
-        <header class="results-section__content section-heading section-heading--center"><p class="eyebrow">Før og etter</p><h2 id="results-title">Resultater fra klinikken</h2><p>Dra i markøren for å sammenligne før- og etterbildet. Resultater er individuelle.</p></header>
-        <div class="comparison-grid">
-          <figure class="comparison" data-comparison>
-            <div class="comparison__base"><img src="assets/images/øyebryn/1-2.jpeg" width="715" height="715" loading="lazy" alt="Etter brynbehandling"></div>
-            <div class="comparison__before" data-comparison-before><img src="assets/images/øyebryn/1-1.jpeg" width="955" height="955" loading="lazy" alt="Før brynbehandling"></div>
-            <input class="comparison__range" type="range" min="0" max="100" value="50" aria-label="Sammenlign før og etter brynbehandling" data-comparison-range>
-            <div class="comparison__handle" aria-hidden="true" data-comparison-handle><span>↔</span></div><div class="comparison__labels" aria-hidden="true"><span>Før</span><span>Etter</span></div><figcaption>Brynbehandling</figcaption>
-          </figure>
-          <figure class="comparison" data-comparison>
-            <div class="comparison__base"><img src="assets/images/øyevipper/1-2.jpeg" width="2016" height="1512" loading="lazy" alt="Etter vippeløft, resultat 1"></div>
-            <div class="comparison__before" data-comparison-before><img src="assets/images/øyevipper/1-1.jpeg" width="1331" height="1775" loading="lazy" alt="Før vippeløft, resultat 1"></div>
-            <input class="comparison__range" type="range" min="0" max="100" value="50" aria-label="Sammenlign før og etter vippeløft, resultat 1" data-comparison-range>
-            <div class="comparison__handle" aria-hidden="true" data-comparison-handle><span>↔</span></div><div class="comparison__labels" aria-hidden="true"><span>Før</span><span>Etter</span></div><figcaption>Vippeløft</figcaption>
-          </figure>
-          <figure class="comparison" data-comparison>
-            <div class="comparison__base"><img src="assets/images/øyevipper/2-2.jpeg" width="1512" height="2016" loading="lazy" alt="Etter vippeløft, resultat 2"></div>
-            <div class="comparison__before" data-comparison-before><img src="assets/images/øyevipper/2-1.jpeg" width="1296" height="1728" loading="lazy" alt="Før vippeløft, resultat 2"></div>
-            <input class="comparison__range" type="range" min="0" max="100" value="50" aria-label="Sammenlign før og etter vippeløft, resultat 2" data-comparison-range>
-            <div class="comparison__handle" aria-hidden="true" data-comparison-handle><span>↔</span></div><div class="comparison__labels" aria-hidden="true"><span>Før</span><span>Etter</span></div><figcaption>Vippeløft</figcaption>
-          </figure>
-          <figure class="comparison" data-comparison>
-            <div class="comparison__base"><img src="assets/images/øyevipper/3-2.jpeg" width="2016" height="1512" loading="lazy" alt="Etter vippeløft, resultat 3"></div>
-            <div class="comparison__before" data-comparison-before><img src="assets/images/øyevipper/3-1.jpeg" width="2016" height="1512" loading="lazy" alt="Før vippeløft, resultat 3"></div>
-            <input class="comparison__range" type="range" min="0" max="100" value="50" aria-label="Sammenlign før og etter vippeløft, resultat 3" data-comparison-range>
-            <div class="comparison__handle" aria-hidden="true" data-comparison-handle><span>↔</span></div><div class="comparison__labels" aria-hidden="true"><span>Før</span><span>Etter</span></div><figcaption>Vippeløft</figcaption>
-          </figure>
-          <figure class="comparison" data-comparison>
-            <div class="comparison__base"><img src="assets/images/øyevipper/4-2.jpeg" width="1157" height="1543" loading="lazy" alt="Etter vippeløft, resultat 4"></div>
-            <div class="comparison__before" data-comparison-before><img src="assets/images/øyevipper/4-1.jpeg" width="1101" height="1468" loading="lazy" alt="Før vippeløft, resultat 4"></div>
-            <input class="comparison__range" type="range" min="0" max="100" value="50" aria-label="Sammenlign før og etter vippeløft, resultat 4" data-comparison-range>
-            <div class="comparison__handle" aria-hidden="true" data-comparison-handle><span>↔</span></div><div class="comparison__labels" aria-hidden="true"><span>Før</span><span>Etter</span></div><figcaption>Vippeløft</figcaption>
-          </figure>
+        <header class="results-section__content section-heading section-heading--center"><p class="eyebrow">Før og etter</p><h2 id="results-title">Resultater fra klinikken</h2><p>Resultater er individuelle.</p></header>
+        <div class="comparison-carousel" aria-label="Før- og etterresultater" data-comparison-carousel tabindex="0">
+          <div class="comparison-carousel__viewport">
+            <div class="comparison-carousel__track" data-comparison-media-track></div>
+            <button class="comparison-carousel__button comparison-carousel__button--prev" type="button" aria-label="Vis forrige før- og etterresultat" data-comparison-prev>←</button>
+            <button class="comparison-carousel__button comparison-carousel__button--next" type="button" aria-label="Vis neste før- og etterresultat" data-comparison-next>→</button>
+          </div>
+          <div class="comparison-carousel__footer"><span aria-live="polite" data-comparison-status></span></div>
         </div>
         <section class="result-carousel" aria-labelledby="more-results-title" data-results-carousel>
           <header class="result-carousel__header"><p class="eyebrow" id="more-results-title">Resultatgalleri</p><span class="result-carousel__status" aria-live="polite" data-carousel-status></span></header>
@@ -176,9 +169,14 @@
         <a class="button button--booking" data-config-booking href="https://bestill.timma.no/divinebeauty" target="_blank" rel="noopener">Bestill time</a>
         <a class="button button--light" data-config-phone-link href="tel:+4790857071">Ring klinikken</a>
         <a class="button button--light" data-config-map href="https://maps.app.goo.gl/ajUvmiicHzwfEzun6" target="_blank" rel="noopener">Åpne kart <span aria-hidden="true">↗</span></a>
-        <a class="site-footer__social" data-config-instagram href="https://www.instagram.com/divinebeauty_by_talin/" target="_blank" rel="noopener" aria-label="Besøk Divine Beauty på Instagram">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.25"></circle><circle class="site-footer__social-dot" cx="17.4" cy="6.7" r="1"></circle></svg>
-        </a>
+        <div class="site-footer__socials" aria-label="Sosiale medier">
+          <a class="site-footer__social" data-config-instagram href="https://www.instagram.com/divinebeauty_by_talin/" target="_blank" rel="noopener" aria-label="Besøk Divine Beauty på Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.25"></circle><circle class="site-footer__social-dot" cx="17.4" cy="6.7" r="1"></circle></svg>
+          </a>
+          <a class="site-footer__social site-footer__social--tiktok" data-config-tiktok href="https://www.tiktok.com/@divinebeauty010" target="_blank" rel="noopener" aria-label="Besøk Divine Beauty på TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.79 4.79 0 0 1-3.77-4.25V2h-3.45v13.67a2.9 2.9 0 1 1-2-2.85V9.33a6.38 6.38 0 1 0 6.38 6.34V8.74a8.21 8.21 0 0 0 4.81 1.54V6.84a4.82 4.82 0 0 1-1.97-.15Z"></path></svg>
+          </a>
+        </div>
       </div>
     </div>
     <div class="container site-footer__grid">
@@ -196,12 +194,11 @@
     <div class="modal__surface"><button class="modal__close" type="button" aria-label="Lukk juridisk informasjon" data-dialog-close>×</button><div data-legal-content></div></div>
   </dialog>
 
-  <aside class="privacy-notice" data-privacy-notice aria-labelledby="privacy-title"><div><h2 id="privacy-title">Et nettsted uten sporing</h2><p>Denne versjonen bruker ingen analyseverktøy eller markedsføringskapsler. Bare lokal lagring brukes for å huske at du har lukket denne meldingen.</p></div><button class="button button--primary" type="button" data-privacy-close>Forstått</button></aside>
   <a class="floating-contact" href="#kontakt" aria-label="Kontakt klinikken"><span aria-hidden="true">✦</span><span>Kontakt</span></a>
   <audio data-background-audio autoplay muted loop preload="auto"><source src="assets/Music/leberch-piano-580522.mp3" type="audio/mpeg"></audio>
   <button class="audio-toggle" type="button" aria-pressed="false" aria-label="Start bakgrunnsmusikk" data-audio-toggle><span aria-hidden="true">♪</span><span data-audio-label>Start musikk</span></button>
   <button class="back-to-top" type="button" aria-label="Tilbake til toppen" data-back-to-top>↑</button>
   <div class="sr-only" role="status" aria-live="polite" data-live-region></div>
-  <script type="module" src="js/main.js?v=10"></script>
+  <script type="module" src="js/main.js?v=17"></script>
 </body>
 </html>

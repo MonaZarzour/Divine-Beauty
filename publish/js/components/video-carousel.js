@@ -1,5 +1,5 @@
-import { videoMedia } from "../data/media-manifest.js?v=2";
-import { filterExistingMedia } from "../utils/media.js?v=2";
+import { videoMedia } from "../data/media-manifest.js?v=4";
+import { filterExistingMedia } from "../utils/media.js?v=4";
 
 const AUTOPLAY_DELAY = 5200;
 

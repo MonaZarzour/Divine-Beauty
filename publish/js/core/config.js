@@ -8,6 +8,7 @@ export const clinicConfig = {
   city: "Oslo",
   bookingUrl: "https://bestill.timma.no/divinebeauty",
   instagram: "https://www.instagram.com/divinebeauty_by_talin/",
+  tiktok: "https://www.tiktok.com/@divinebeauty010",
   facebook: "",
   mapUrl: "https://maps.app.goo.gl/ajUvmiicHzwfEzun6",
 };

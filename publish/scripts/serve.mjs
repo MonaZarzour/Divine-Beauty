@@ -12,7 +12,7 @@ const mimeTypes = { ".html": "text/html; charset=utf-8", ".css": "text/css; char
 const refreshManifest = async () => {
   try {
     const counts = await generateMediaManifest();
-    console.log(`Media updated: ${counts.results} resultater, ${counts.videos} videoer.`);
+    console.log(`Media updated: ${counts.results} resultater, ${counts.videos} videoer, ${counts.comparisons} før/etter-par.`);
   } catch (error) {
     console.error("Could not update media manifest:", error.message);
   }

@@ -9,7 +9,7 @@
 @import url("./layout/header.css");
 @import url("./layout/navigation.css");
 @import url("./layout/sections.css");
-@import url("./layout/footer.css");
+@import url("./layout/footer.css?v=3");
 @import url("./components/buttons.css");
 @import url("./components/cards.css");
 @import url("./components/forms.css");
@@ -26,11 +26,11 @@
 @import url("./sections/hero.css?v=4");
 @import url("./sections/trust.css");
 @import url("./sections/treatments.css");
-@import url("./sections/specialists.css?v=4");
-@import url("./sections/results.css?v=2");
+@import url("./sections/specialists.css?v=12");
+@import url("./sections/results.css?v=4");
 @import url("./sections/videos.css?v=3");
 @import url("./sections/testimonials-section.css");
 @import url("./utilities/spacing.css");
 @import url("./utilities/display.css");
 @import url("./utilities/animations.css");
-@import url("./utilities/responsive.css?v=4");
+@import url("./utilities/responsive.css?v=5");
