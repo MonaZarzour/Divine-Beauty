@@ -32,27 +32,27 @@ const renderReviews = (track, reviews) => {
     article.dataset.reviewSlide = "";
     article.setAttribute("aria-hidden", "true");
 
+    const meta = document.createElement("header");
+    meta.className = "review-card__meta";
+
     const stars = document.createElement("div");
     stars.className = "review-card__stars";
     stars.setAttribute("aria-label", `${review.rating} av 5 stjerner`);
     stars.textContent = `${"★".repeat(review.rating)}${"☆".repeat(5 - review.rating)}`;
 
-    const quote = document.createElement("blockquote");
-    quote.textContent = `«${review.comment}»`;
-
-    const footer = document.createElement("footer");
     const customer = document.createElement("div");
+    customer.className = "review-card__customer";
     const name = document.createElement("strong");
     const date = document.createElement("span");
-    const source = document.createElement("span");
     name.textContent = review.name;
     date.textContent = review.date;
-    source.className = "review-card__source";
-    source.textContent = "Verifisert via Timma";
     customer.append(name);
     if (review.date) customer.append(date);
-    footer.append(customer, source);
-    article.append(stars, quote, footer);
+    meta.append(stars, customer);
+
+    const quote = document.createElement("blockquote");
+    quote.textContent = `«${review.comment}»`;
+    article.append(meta, quote);
     fragment.append(article);
   });
   track.replaceChildren(fragment);
@@ -76,6 +76,8 @@ export const initReviewsCarousel = async () => {
 
   renderReviews(track, reviews);
   const slides = [...track.querySelectorAll("[data-review-slide]")];
+  const viewport = carousel.querySelector(".reviews-carousel__viewport");
+  const layout = carousel.closest(".specialist-card__reviews-layout");
   let current = 0;
   const show = (index) => {
     current = (index + slides.length) % slides.length;
@@ -99,4 +101,20 @@ export const initReviewsCarousel = async () => {
   status.hidden = slides.length < 2;
   section.hidden = false;
   show(0);
+
+  const syncPanelHeight = () => {
+    if (!viewport || !layout) return;
+    layout.style.removeProperty("--review-panel-height");
+    const minimumHeight = viewport.getBoundingClientRect().height;
+    const contentHeight = Math.max(...slides.map((slide) => slide.scrollHeight));
+    layout.style.setProperty("--review-panel-height", `${Math.ceil(Math.max(minimumHeight, contentHeight) + 4)}px`);
+  };
+
+  if (document.fonts?.ready) await document.fonts.ready;
+  syncPanelHeight();
+  let resizeFrame;
+  window.addEventListener("resize", () => {
+    cancelAnimationFrame(resizeFrame);
+    resizeFrame = requestAnimationFrame(syncPanelHeight);
+  }, { passive: true });
 };

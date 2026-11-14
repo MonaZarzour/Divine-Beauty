@@ -1,4 +1,4 @@
-import { comparisonPairs } from "../data/media-manifest.js?v=4";
+import { comparisonPairs } from "../data/media-manifest.js?v=5";
 import { filterExistingMedia } from "../utils/media.js?v=4";
 import { initBeforeAfterSliders } from "./before-after-slider.js?v=4";
 

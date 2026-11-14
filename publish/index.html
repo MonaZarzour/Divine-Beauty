@@ -12,7 +12,7 @@
   <meta property="og:description" content="Faglig veiledning og skånsom hudpleie, tilpasset deg.">
   <link rel="icon" href="assets/images/branding/favicon.svg?v=gold" type="image/svg+xml">
   <link rel="alternate icon" href="favicon.ico">
-  <link rel="stylesheet" href="css/main.css?v=27">
+  <link rel="stylesheet" href="css/main.css?v=29">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -40,6 +40,7 @@
           <a href="#hjem" data-nav-link>Hjem</a>
           <a href="#behandlinger" data-nav-link>Behandlinger</a>
           <a href="#behandlere" data-nav-link>Behandlere</a>
+          <a href="#om-klinikken" data-nav-link>Om Klinikken</a>
           <a href="#resultater" data-nav-link>Resultater</a>
           <a href="#videoer" data-nav-link>Videoer</a>
           <a class="button button--primary navigation-shell__cta" data-config-booking href="https://bestill.timma.no/divinebeauty" target="_blank" rel="noopener">Bestill time</a>
@@ -64,9 +65,10 @@
             <li><span aria-hidden="true">✓</span> Trygge rutiner</li>
             <li><span aria-hidden="true">✓</span> Tydelig etterpleie</li>
           </ul>
-          <div class="hero__awards" aria-label="Toppvurdert på Timma i 2024 og 2025">
+          <div class="hero__awards" role="group" aria-label="Toppvurdert på Timma i 2024, 2025 og 2026">
             <img src="SVG/timma2024.svg" width="536" height="717" draggable="false" alt="Toppvurdert på Timma av våre kunder i 2024">
             <img src="SVG/timma2025.svg" width="536" height="717" draggable="false" alt="Toppvurdert på Timma av våre kunder i 2025">
+            <img src="SVG/timma2026.svg" width="536" height="717" draggable="false" alt="Toppvurdert på Timma av våre kunder i 2026">
           </div>
         </div>
         <figure class="hero__visual" data-reveal>
@@ -81,23 +83,41 @@
         <header class="section-heading section-heading--center"><p class="eyebrow">Hovedbehandler</p><h2 id="specialists-title">Møt Talin</h2><p>Personlig veiledning og behandling i rolige, profesjonelle omgivelser.</p></header>
         <div class="specialist-grid">
           <article class="specialist-card" data-reveal>
-            <div class="specialist-card__media"><img class="specialist-card__portrait" src="assets/images/behandlere/Talin.jpeg" width="1320" height="2339" loading="lazy" alt="Talin, hovedbehandler hos Divine Beauty"></div>
+            <div class="specialist-card__media"><img class="specialist-card__portrait" src="assets/images/behandlere/Talin.png" width="1312" height="1199" loading="lazy" alt="Talin, hovedbehandler hos Divine Beauty"></div>
             <div class="specialist-card__content"><p class="eyebrow">Hovedbehandler</p><h3>Talin</h3><p>«Jeg ønsker at hver kunde skal forstå huden sin og føle seg trygg på valgene vi tar sammen.»</p><ul><li>Personlig veiledning</li><li>Individuelt tilpassede behandlinger</li><li>Rolig og profesjonell oppfølging</li></ul><div class="specialist-card__actions"><button class="button button--text" type="button" data-specialist-open="talin">Les mer om Talin</button><a href="#kontakt" aria-label="Kontakt klinikken om Talin">Kontakt klinikken</a></div>
             <section id="vurderinger" class="specialist-card__reviews" aria-labelledby="testimonials-title" data-reviews-section hidden>
               <header class="specialist-card__reviews-heading">
                 <h3 id="testimonials-title">Dette sier kundene</h3>
               </header>
-              <div class="reviews-carousel" aria-label="Kundeomtaler" data-reviews-carousel tabindex="0">
-                <div class="reviews-carousel__viewport"><div class="reviews-carousel__track" data-reviews-track></div></div>
-                <footer class="reviews-carousel__controls">
-                  <button type="button" aria-label="Vis forrige vurdering" data-reviews-prev>←</button>
-                  <span aria-live="polite" data-reviews-status></span>
-                  <button type="button" aria-label="Vis neste vurdering" data-reviews-next>→</button>
-                </footer>
+              <div class="specialist-card__reviews-layout">
+                <div class="reviews-carousel" aria-label="Kundeomtaler" data-reviews-carousel tabindex="0">
+                  <div class="reviews-carousel__viewport"><div class="reviews-carousel__track" data-reviews-track></div></div>
+                  <footer class="reviews-carousel__controls">
+                    <button type="button" aria-label="Vis forrige vurdering" data-reviews-prev>←</button>
+                    <span aria-live="polite" data-reviews-status></span>
+                    <button type="button" aria-label="Vis neste vurdering" data-reviews-next>→</button>
+                  </footer>
+                </div>
+                <div class="timma-rating">
+                  <iframe id="ratingIframe8156" title="Divine Beauty sin oppdaterte vurdering på Timma" src="https://timma.no/salong/divine-beauty/rating" loading="lazy" scrolling="no"></iframe>
+                  <a class="timma-rating__link" href="https://timma.no/salong/divine-beauty" target="_blank" rel="noopener" aria-label="Les alle skriftlige omtaler av Divine Beauty på Timma"></a>
+                  <span class="timma-rating__hint" aria-hidden="true">Les alle omtaler <span>↗</span></span>
+                </div>
               </div>
             </section>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="om-klinikken" class="section clinic-intro" aria-labelledby="clinic-intro-title" data-route-title="Om Klinikken">
+      <div class="container">
+        <div class="clinic-intro__content">
+          <h2 id="clinic-intro-title">Om Klinikken</h2>
+          <p>Velkommen til Divine Beauty by Talin. I vår rolige og skjermede salong kan du senke skuldrene og føle deg hjemme. Her får du god tid, personlig oppfølging og behandlinger tilpasset deg, i private og avslappende omgivelser.</p>
+          <p>Vi tilbyr blant annet ansiktsbehandlinger, microneedling, vippeløft, brynsbehandlinger, voksing og fotpleie.</p>
+          <p class="clinic-intro__welcome">Hjertelig velkommen!</p>
         </div>
       </div>
     </section>
@@ -181,7 +201,7 @@
     </div>
     <div class="container site-footer__grid">
       <div><a class="brand brand--footer" href="#hjem" aria-label="Divine Beauty – gå til hjem"><img class="brand__logo" src="SVG/Divine-Beauty-Logo-BW.svg" width="1068" height="546" loading="lazy" alt=""></a><p>Hudpleie med personlig veiledning og behandlinger tilpasset individuelle behov.</p></div>
-      <nav aria-label="Snarveier"><h2>Utforsk</h2><a href="#behandlinger">Behandlinger</a><a href="#behandlere">Behandlere</a><a href="#resultater">Resultater</a><a href="#videoer">Videoer</a><a href="#kontakt">Kontakt</a></nav>
+      <nav aria-label="Snarveier"><h2>Utforsk</h2><a href="#behandlinger">Behandlinger</a><a href="#behandlere">Behandlere</a><a href="#om-klinikken">Om Klinikken</a><a href="#resultater">Resultater</a><a href="#videoer">Videoer</a><a href="#kontakt">Kontakt</a></nav>
       <nav aria-label="Behandlingslenker"><h2>Behandlinger</h2><a href="#behandlinger">Hudkonsultasjon</a><a href="#behandlinger">Ansiktsbehandling</a><a href="#behandlinger">Kjemisk peeling</a><a href="#behandlinger">Microneedling</a><a href="#behandlinger">Sensitiv hud</a></nav>
     </div>
     <div class="container site-footer__legal"><p>© <span data-current-year></span> Divine Beauty</p><nav aria-label="Juridisk informasjon"><button type="button" data-legal-open="personvern">Personvern</button><button type="button" data-legal-open="informasjonskapsler">Informasjonskapsler</button><button type="button" data-legal-open="vilkar">Vilkår</button><button type="button" data-legal-open="tilgjengelighet">Tilgjengelighet</button></nav></div>
@@ -199,6 +219,10 @@
   <button class="audio-toggle" type="button" aria-pressed="false" aria-label="Start bakgrunnsmusikk" data-audio-toggle><span aria-hidden="true">♪</span><span data-audio-label>Start musikk</span></button>
   <button class="back-to-top" type="button" aria-label="Tilbake til toppen" data-back-to-top>↑</button>
   <div class="sr-only" role="status" aria-live="polite" data-live-region></div>
-  <script type="module" src="js/main.js?v=17"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/2.8.3/iframeResizer.min.js" integrity="sha512-UjgBSd18er2m1lgKlqRseRyegsGgz4tfMF8dq+XukxiHcg7MjQyUGJx1fA9QmfRs0LtDaU1Mpa5wffedX1rqig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    if (window.iFrameResize) window.iFrameResize({ checkOrigin: true }, "#ratingIframe8156");
+  </script>
+  <script type="module" src="js/main.js?v=23"></script>
 </body>
 </html>

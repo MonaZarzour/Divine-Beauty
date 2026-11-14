@@ -2,7 +2,7 @@
 .hero__visual img{display:block;height:auto}
 .hero__visual::before{inset:-1rem 1.5rem 1.5rem -1rem;border-radius:var(--radius-lg)}
 .hero__visual img{aspect-ratio:4/3;border-radius:var(--radius-lg)}
-.hero__awards{display:flex;align-items:flex-end;gap:.75rem;margin-top:1.5rem}
+.hero__awards{display:flex;flex-wrap:wrap;align-items:flex-end;gap:.75rem;margin-top:1.5rem}
 .hero__awards img{display:block;width:auto;height:clamp(7.25rem,11vw,9.5rem);pointer-events:none;user-select:none;-webkit-user-drag:none;filter:drop-shadow(0 .45rem .8rem rgba(52,42,49,.12))}
 .hero{background-image:linear-gradient(90deg,rgba(250,247,245,.96) 0%,rgba(244,232,232,.9) 48%,rgba(234,207,209,.78) 100%),url("../../assets/images/hero/hero-clinic.jpeg");background-position:center;background-size:cover;background-repeat:no-repeat}
 @media(max-width:719px){.hero{min-height:auto;padding-top:clamp(2.5rem,10vw,4rem);background-image:linear-gradient(rgba(250,247,245,.93),rgba(234,207,209,.86)),url("../../assets/images/hero/hero-clinic.jpeg")}.hero__grid{gap:2.25rem}.hero__visual{width:min(100%,28rem);margin-inline:auto}.hero__assurances{margin-top:1.5rem}.hero__awards{justify-content:center}.hero__awards img{height:6.5rem}.hero__note{right:.25rem;bottom:1rem}}

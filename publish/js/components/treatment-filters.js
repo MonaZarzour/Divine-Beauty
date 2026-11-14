@@ -1,4 +1,4 @@
-import { activeTreatments, treatmentCategories } from "../data/treatments.js";
+import { activeTreatments, treatmentCategories } from "../data/treatments.js?v=3";
 import { versionedAssetPath } from "../utils/media.js?v=4";
 
 const categoryCard = (category) => {

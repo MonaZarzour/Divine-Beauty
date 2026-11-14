@@ -1,4 +1,4 @@
-import { routeTitles } from "./config.js";
+import { routeTitles } from "./config.js?v=2";
 
 const validRoutes = new Set(Object.keys(routeTitles));
 let routeScrollLocked = false;

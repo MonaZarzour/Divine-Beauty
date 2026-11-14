@@ -19,6 +19,7 @@ export const routeTitles = {
   tillit: "Våre kvalitetsprinsipper",
   behandlinger: "Behandlinger",
   behandlere: "Behandlere",
+  "om-klinikken": "Om Klinikken",
   resultater: "Resultater",
   videoer: "Videoer",
   kontakt: "Kontakt",

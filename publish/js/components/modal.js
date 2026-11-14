@@ -1,4 +1,4 @@
-import { activeTreatments, formatPrice, getCategoryById, getTreatmentById } from "../data/treatments.js";
+import { activeTreatments, getCategoryById, getTreatmentById } from "../data/treatments.js?v=3";
 import { specialists } from "../data/specialists.js";
 import { clinicConfig } from "../core/config.js";
 
@@ -11,12 +11,12 @@ const legalContent = {
 
 const treatmentMarkup = (item) => {
   const category = getCategoryById(item.category);
-  return `<p class="eyebrow">${category?.name || "Behandling"}</p><h2 id="detail-title">${item.name}</h2><div class="modal__meta">${item.duration ? `<span>${item.duration}</span>` : ""}<span>${formatPrice(item)}</span></div><p>${item.description}</p>${item.note ? `<div class="modal__warning"><strong>Viktig informasjon</strong><p>${item.note}</p></div>` : ""}<a class="button button--primary" href="${clinicConfig.bookingUrl}" target="_blank" rel="noopener" data-dialog-action>Bestill time</a>`;
+  return `<p class="eyebrow">${category?.name || "Behandling"}</p><h2 id="detail-title">${item.name}</h2>${item.duration ? `<div class="modal__meta"><span>Ca. ${item.duration}</span></div>` : ""}<p class="treatment-description">${item.description}</p>${item.note ? `<div class="modal__warning"><strong>Viktig informasjon</strong><p>${item.note}</p></div>` : ""}<a class="button button--primary" href="${clinicConfig.bookingUrl}" target="_blank" rel="noopener" data-dialog-action>Bestill time</a>`;
 };
 
 const categoryMarkup = (category) => {
   const items = activeTreatments.filter((item) => item.category === category.id);
-  const rows = items.map((item) => `<article class="modal-treatment-row"><div><div class="modal-treatment-row__heading"><h3>${item.name}</h3>${item.badge ? `<span>${item.badge}</span>` : ""}</div><p>${item.description}</p>${item.note ? `<small>${item.note}</small>` : ""}</div><div class="modal-treatment-row__meta">${item.duration ? `<span>${item.duration}</span>` : ""}<strong>${formatPrice(item)}</strong></div></article>`).join("");
+  const rows = items.map((item) => `<article class="modal-treatment-row"><div><div class="modal-treatment-row__heading"><h3>${item.name}</h3>${item.badge ? `<span>${item.badge}</span>` : ""}</div>${item.description ? `<p class="treatment-description">${item.description}</p>` : ""}</div><div class="modal-treatment-row__meta">${item.duration ? `<span>Ca. ${item.duration}</span>` : ""}<a class="modal-treatment-row__link" href="${clinicConfig.bookingUrl}" target="_blank" rel="noopener" aria-label="Les mer og bestill: ${item.name}">Les mer og bestill ↗</a></div></article>`).join("");
   return `<p class="eyebrow">Behandlingskategori</p><h2 id="detail-title">${category.name}</h2><p>${category.intro}</p><div class="modal-treatment-list">${rows}</div><a class="button button--primary" href="${clinicConfig.bookingUrl}" target="_blank" rel="noopener" data-dialog-action>Bestill time</a>`;
 };
 const specialistMarkup = (item) => `<p class="eyebrow">${item.role}</p><h2 id="detail-title">${item.name}</h2><p>«${item.philosophy}»</p><h3>Fokusområder</h3><p>${item.expertise}</p><a class="button button--primary" href="#kontakt" data-dialog-action>Kontakt klinikken</a>`;

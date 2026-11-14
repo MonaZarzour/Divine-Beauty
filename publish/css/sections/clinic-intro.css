@@ -1,0 +1,6 @@
+.clinic-intro{padding-block:clamp(3rem,7vw,6rem);background:var(--gradient-page)}
+.clinic-intro__content{width:min(100%,66ch);margin-inline:auto;text-align:center}
+.clinic-intro__content h2{margin-bottom:1.25rem}
+.clinic-intro__content p{color:var(--color-text-muted);line-height:1.65}
+.clinic-intro__content p+p{margin-top:.85rem}
+.clinic-intro__content .clinic-intro__welcome{margin-top:1.25rem;font:italic 1.2rem/1.4 var(--font-heading);color:var(--color-heading)}

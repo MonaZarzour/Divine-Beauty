@@ -8,6 +8,12 @@ const outputFile = resolve(projectRoot, "js/data/media-manifest.js");
 const collator = new Intl.Collator("nb", { numeric: true, sensitivity: "base" });
 const imageExtensions = new Set([".jpg", ".jpeg", ".png", ".webp", ".avif"]);
 
+export const comparisonCategories = [
+  { folder: "assets/images/øyebryn", type: "bryn", label: "Brynbehandling" },
+  { folder: "assets/images/øyevipper", type: "vipper", label: "Vippeløft" },
+  { folder: "assets/images/Ansiktsbehandling", type: "ansiktsbehandling", label: "Ansiktsbehandling" },
+];
+
 const scan = async (folder, extensions) => {
   const absoluteFolder = resolve(projectRoot, folder);
   const entries = await readdir(absoluteFolder, { withFileTypes: true });
@@ -55,14 +61,11 @@ const createComparisonPairs = (paths, type, label, version) => {
 export const generateMediaManifest = async () => {
   const results = await scan("assets/images/resultater", imageExtensions);
   const videos = await scan("assets/images/Video", new Set([".mp4", ".webm"]));
-  const eyebrowMedia = await scan("assets/images/øyebryn", imageExtensions);
-  const eyelashMedia = await scan("assets/images/øyevipper", imageExtensions);
   const assetVersions = await createAssetVersions();
   const version = (path) => `${path}?v=${assetVersions[path]}`;
-  const comparisonPairs = [
-    ...createComparisonPairs(eyebrowMedia, "bryn", "Brynbehandling", version),
-    ...createComparisonPairs(eyelashMedia, "vipper", "Vippeløft", version),
-  ];
+  const comparisonPairs = (await Promise.all(comparisonCategories.map(async ({ folder, type, label }) =>
+    createComparisonPairs(await scan(folder, imageExtensions), type, label, version)
+  ))).flat();
   const source = `// Generated from the media folders. Run npm run media:update before publishing.\nexport const assetVersions = ${JSON.stringify(assetVersions, null, 2)};\n\nexport const comparisonPairs = ${JSON.stringify(comparisonPairs, null, 2)};\n\nexport const resultMedia = ${JSON.stringify(results.map(version), null, 2)};\n\nexport const videoMedia = ${JSON.stringify(videos.map(version), null, 2)};\n`;
   await mkdir(dirname(outputFile), { recursive: true });
   await writeFile(outputFile, source, "utf8");

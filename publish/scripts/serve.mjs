@@ -3,7 +3,7 @@ import { stat } from "node:fs/promises";
 import { dirname, extname, resolve, sep } from "node:path";
 import { createServer } from "node:http";
 import { fileURLToPath } from "node:url";
-import { generateMediaManifest } from "./generate-media-manifest.mjs";
+import { comparisonCategories, generateMediaManifest } from "./generate-media-manifest.mjs";
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const port = Number(process.argv[2]) || Number(process.env.PORT) || 4177;
@@ -20,7 +20,7 @@ const refreshManifest = async () => {
 
 await refreshManifest();
 let refreshTimer;
-["assets/images/resultater", "assets/images/Video"].forEach((folder) => {
+["assets/images/resultater", "assets/images/Video", ...comparisonCategories.map(({ folder }) => folder)].forEach((folder) => {
   watch(resolve(projectRoot, folder), () => {
     clearTimeout(refreshTimer);
     refreshTimer = setTimeout(refreshManifest, 150);

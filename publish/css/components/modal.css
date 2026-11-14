@@ -5,6 +5,10 @@
 .modal-treatment-row .modal-treatment-row__heading h3{margin:0;letter-spacing:0;text-transform:none;font-size:1rem;line-height:1.35}
 .modal-treatment-row__heading span{padding:.2rem .5rem;border-radius:var(--radius-pill);background:var(--color-secondary-light);font-size:.62rem;font-weight:750;color:var(--color-primary-deep)}
 .modal-treatment-row p{margin-top:.35rem;font-size:.8rem;line-height:1.55}
+.treatment-description{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden;white-space:normal;overflow-wrap:anywhere}
+.modal-treatment-row__link{display:inline-flex;align-items:center;justify-content:center;min-height:2.75rem;padding:.55rem .9rem;border:1px solid rgba(150,91,118,.2);border-radius:var(--radius-pill);background:var(--gradient-pink);box-shadow:0 .25rem .75rem rgba(132,76,101,.1);font-size:.72rem;font-weight:700;color:var(--color-primary-deep);text-decoration:none;transition:box-shadow .2s ease,filter .2s ease}
+.modal-treatment-row__link:hover{color:var(--color-heading);filter:brightness(.97);box-shadow:0 .35rem 1rem rgba(132,76,101,.17)}
+.modal-treatment-row__link:focus-visible{outline:2px solid var(--color-primary-dark);outline-offset:3px}
 .modal-treatment-row small{display:block;margin-top:.45rem;color:var(--color-primary-dark)}
 .modal-treatment-row__meta{display:flex;align-items:center;justify-content:space-between;gap:.75rem;white-space:nowrap}
 .modal-treatment-row__meta span{font-size:.72rem;color:var(--color-text-muted)}

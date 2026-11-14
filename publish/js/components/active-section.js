@@ -1,4 +1,4 @@
-import { setActiveRoute } from "../core/router.js";
+import { setActiveRoute } from "../core/router.js?v=2";
 
 export const initActiveSection = () => {
   if (!("IntersectionObserver" in window)) return;
