@@ -13,7 +13,7 @@ import { initContactLinks } from "./components/contact-links.js?v=2";
 import { initReviewsCarousel } from "./components/reviews-carousel.js?v=5";
 import { initBackToTop } from "./components/back-to-top.js";
 import { initBackgroundAudio } from "./components/background-audio.js?v=4";
-import { applyAssetVersions } from "./utils/media.js?v=4";
+import { applyAssetVersions } from "./utils/media.js?v=5";
 
 // Delegate so images added later by the carousels are covered too.
 const suppressImageAction = (event) => {

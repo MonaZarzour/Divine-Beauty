@@ -1,4 +1,4 @@
-import { assetVersions } from "../data/media-manifest.js?v=4";
+import { assetVersions } from "../data/media-manifest.js?v=6";
 
 export const versionedAssetPath = (src) => {
   const path = src.split(/[?#]/, 1)[0];

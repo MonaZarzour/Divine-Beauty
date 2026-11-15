@@ -2,7 +2,7 @@
 export const assetVersions = {
   "assets/images/Ansiktsbehandling/1-1.png": "90ca6dde0e70",
   "assets/images/Ansiktsbehandling/1-2.png": "47a4e8f54bab",
-  "assets/images/behandlere/Talin.png": "0e8bf587eb7a",
+  "assets/images/behandlere/Talin.png": "0eaad5c8d555",
   "assets/images/behandlinger/ansiktsbehandling.jpg": "6c87c560e35f",
   "assets/images/behandlinger/fotbehandling.png": "dd3b658b6781",
   "assets/images/behandlinger/harfjerning.png": "62898fcbe4fa",
